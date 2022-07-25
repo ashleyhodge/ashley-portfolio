@@ -1,8 +1,23 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-export default function App() {
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Router>
+      <div>
+        <Nav />
+        <Routes>
+          <Route
+            path="/"
+            element={<Home />}
+          />
+        </Routes>
+      </div>
+    </Router>
   )
 }
+
+export default App;
