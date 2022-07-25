@@ -50,13 +50,12 @@ function ProjectList({ currentCategory }) {
             {filterProducts().map((project) => (
               <ProjectItem
                 key={project._id}
-                _id={project._id}
                 image={project.image}
                 name={project.name}
-                price={project.price}
-                quantity={project.quantity}
               />
+              
             ))}
+
           </div>
         </div>
       ) : (
