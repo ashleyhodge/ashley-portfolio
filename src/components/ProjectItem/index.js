@@ -9,7 +9,8 @@ function ProjectItem(item) {
     name,
     description,
     github,
-    link
+    link,
+    gif
   } = item;
 
   const [showModal, setShowModal] = React.useState(false);
@@ -33,8 +34,13 @@ function ProjectItem(item) {
                 </h3>
                   <AiFillCloseSquare onClick={() => setShowModal(false)} className="fill-blue-200 mr-4 cursor-pointer hover:fill-blue-100" size={30}/>
               </div>
+              {/* gif */}
+              <div className="flex justify-center items-center pt-2">
+              <img className="border" src={`/gifs/${gif}.gif`} />
+              </div>
               {/*body*/}
               <div className="relative p-6 flex-auto">
+                
                 <p className="my-4 text-slate-500 text-lg leading-relaxed">
                   {description}
                 </p>
