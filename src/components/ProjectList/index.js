@@ -4,7 +4,7 @@ import ProjectItem from '../ProjectItem';
 
 
 
-function ProjectList({ currentCategory }) {
+function ProjectList({ currentCategory }, i) {
   const projects = [
     {
       name: 'Access Tennessee',
@@ -49,9 +49,11 @@ function ProjectList({ currentCategory }) {
           <div className="grid grid-cols-1 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3  md:grid-cols-2  sm:grid-cols-2  gap-8">
             {filterProducts().map((project) => (
               <ProjectItem
-                key={project._id}
                 image={project.image}
                 name={project.name}
+                description={project.description}
+                link={project.link}
+                github={project.github}
               />
               
             ))}

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBriefcase, FaTwitter } from 'react-icons/fa'
 import { MdOutlineMyLocation } from 'react-icons/md'
-import { AiFillFacebook, AiOutlineGithub, AiOutlineInstagram } from 'react-icons/ai'
+import { AiFillFacebook, AiOutlineGithub, AiOutlineInstagram, AiFillLinkedin } from 'react-icons/ai'
 
 const Home = () => {
 
@@ -33,6 +33,7 @@ const Home = () => {
 				<a className="link" href="#" data-tippy-content="@twitter_handle"><FaTwitter className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
 				<a className="link" href="#" data-tippy-content="@github_handle"><AiOutlineGithub className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
 				<a className="link" href="#" data-tippy-content="@instagram_handle"><AiOutlineInstagram className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
+				<a className="link" href="#" data-tippy-content="@instagram_handle"><AiFillLinkedin className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
 			</div>
 		</div>
 
