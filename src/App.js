@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           <Route
             path="/about"
             element={<About />}
+          />
+          <Route
+            path="/resume"
+            element={<Resume />}
           />
         </Routes>
       </div>
