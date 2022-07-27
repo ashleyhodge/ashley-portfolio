@@ -12,8 +12,10 @@ const About = () => {
     {/* <!-- right timeline --> */}
     <div className="mb-8 sm:flex items-center w-full right-timeline">
       <div className="order-1 sm:w-5/12 w-px"></div>
-      <img className="z-20 flex items-center order-1 sm:shadow-xl sm:w-1/2 sm:h-60 rounded-l-lg lg:rounded-lg" src="/images/school.jpg"></img>
-      <div className="order-1 bg-blue-50 rounded-lg lg:rounded-l-none shadow-xl px-6 py-4">
+
+      <img className="z-20 flex items-center order-1 sm:shadow-xl  md:w-1/2 md:h-60  rounded-t-lg md:rounded-l-lg md:rounded-r-none lg:rounded-lg" src="/images/school.jpg"></img>
+      <div className="order-1 bg-blue-50 rounded-b-lg md:rounded-lg md lg:rounded-l-none shadow-xl px-6 py-4">
+        
         <h3 className="mb-3 font-bold text-gray-800 text-xl">Graduated from the University of Tennessee with a B.A. in Psychology</h3>
         <h4 className="mb-3 text-gray-800 text-l">May 2020</h4>
         <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">After 4 years, I graduated as a psychology major with a business administration minor. While enrolled, I took part in alternative spring break programs as a way to serve communities in need. Although I've changed career paths since graduation, I value my time here and still use the skills that I learned during my time here.</p>
@@ -24,8 +26,8 @@ const About = () => {
     <div className="mb-8 sm:flex justify-between flex-row-reverse items-center w-full left-timeline">
       <div className="order-1 w-5/12"></div>
 
-      <img className="z-20 flex items-center order-1 sm:shadow-xl sm:w-1/2 sm:h-60 rounded-r-lg lg:rounded-lg" src="/images/americorps.jpg"></img>
-      <div className="order-1 bg-blue-200 rounded-lg lg:rounded-r-none shadow-xl px-6 py-4">
+      <img className="z-20 flex items-center order-1 sm:shadow-xl sm:w-1/2 sm:h-60 rounded-t-lg md:rounded-r-lg md:rounded-l-none lg:rounded-lg" src="/images/americorps.jpg"></img>
+      <div className="order-1 bg-blue-200 rounded-b-lg md:rounded-lg lg:rounded-r-none shadow-xl px-6 py-4">
 
         <h3 className="mb-3 font-bold text-white text-xl">Served as an AmeriCorps member in Montana</h3>
         <h4 className="mb-3 text-white text-l">August 2020</h4>
@@ -37,8 +39,8 @@ const About = () => {
     <div className="mb-8 sm:flex justify-between items-center w-full right-timeline">
       <div className="order-1 w-5/12"></div>
 
-      <img className="z-20 flex items-center order-1 sm:shadow-xl sm:w-1/2 sm:h-60 rounded-l-lg lg:rounded-lg"  src="/images/boot_camp.jpg"></img>
-      <div className="order-1 bg-blue-50 rounded-lg lg:rounded-l-none shadow-xl px-6 py-4">
+      <img className="z-20 flex items-center order-1 sm:shadow-xl  md:w-1/2 md:h-60  rounded-t-lg md:rounded-l-lg md:rounded-r-none lg:rounded-lg" src="/images/boot_camp.jpg"></img>
+      <div className="order-1 bg-blue-50 rounded-b-lg md:rounded-lg md lg:rounded-l-none shadow-xl px-6 py-4">
 
         <h3 className="mb-3 font-bold text-gray-800 text-xl">Attended Vanderbilt Coding Boot Camp</h3>
         <h4 className="mb-3 text-gray-800 text-l">December 2021</h4>
@@ -50,8 +52,8 @@ const About = () => {
     <div className="mb-8 sm:flex justify-between flex-row-reverse items-center w-full left-timeline">
       <div className="order-1 w-5/12"></div>
       
-      <img className="z-20 flex items-center order-1 sm:shadow-xl sm:w-1/2 sm:h-60 rounded-r-lg lg:rounded-lg"  src="/images/continuingeducation.jpg"></img>
-      <div className="order-1 bg-blue-200 rounded-lg lg:rounded-r-none shadow-xl px-6 py-4">
+      <img className="z-20 flex items-center order-1 sm:shadow-xl sm:w-1/2 sm:h-60 rounded-t-lg md:rounded-r-lg md:rounded-l-none lg:rounded-lg"  src="/images/continuingeducation.jpg"></img>
+      <div className="order-1 bg-blue-200 rounded-b-lg md:rounded-lg lg:rounded-r-none shadow-xl px-6 py-4">
 
         <h3 className="mb-3 font-bold text-white text-xl">Continuing Education</h3>
         <h4 className="mb-3 text-white text-l">May 2022</h4>
