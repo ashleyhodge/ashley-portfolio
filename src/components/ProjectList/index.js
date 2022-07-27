@@ -1,10 +1,9 @@
 import React from 'react';
-
 import ProjectItem from '../ProjectItem';
 
 
 
-function ProjectList({ currentCategory }, i) {
+function ProjectList({ currentCategory }) {
   const projects = [
     {
       name: 'Access Tennessee',
