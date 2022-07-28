@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ashley-portfolio/static/css/main.4abe2acc.css",
+    "main.js": "/ashley-portfolio/static/js/main.47e2aa15.js",
+    "index.html": "/ashley-portfolio/index.html",
+    "main.4abe2acc.css.map": "/ashley-portfolio/static/css/main.4abe2acc.css.map",
+    "main.47e2aa15.js.map": "/ashley-portfolio/static/js/main.47e2aa15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4abe2acc.css",
+    "static/js/main.47e2aa15.js"
+  ]
+}
