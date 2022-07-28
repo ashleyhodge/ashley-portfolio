@@ -16,7 +16,7 @@ function ProjectItem(item) {
   const [showModal, setShowModal] = React.useState(false);
 
   return(
-    <div class="flex flex-col max-w-sm bg-egg-50 rounded-lg shadow-lg"> 
+    <div className="flex flex-col max-w-sm bg-egg-50 rounded-lg shadow-lg"> 
         <img className="rounded-lg" src={`/images/${image}.jpg`} onClick={() => setShowModal(true)} alt={name} />
     
     {showModal ? (

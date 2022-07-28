@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { FaBriefcase, FaTwitter } from 'react-icons/fa'
 import { MdOutlineMyLocation } from 'react-icons/md'
 import { AiFillFacebook, AiOutlineGithub, AiOutlineInstagram, AiFillLinkedin } from 'react-icons/ai'
@@ -24,7 +25,7 @@ const Home = () => {
 
 			<div className="pt-12 pb-8">
 				<button className="bg-blue-200 hover:bg-blue-100 text-white font-bold py-2 px-4 rounded-full">
-				Get In Touch
+					<Link to="/contact">Get In Touch</Link>
 				</button> 
 			</div>
 

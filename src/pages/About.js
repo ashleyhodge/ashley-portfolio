@@ -5,7 +5,7 @@ import { TbSchool } from 'react-icons/tb'
 const About = () => {
   return (
     // <!-- component -->
-<div className="container bg-gray-200 mx-auto w-full h-full">
+<div className="container shadow-xl bg-gray-200 mx-auto w-full h-full">
   <div className="wrap overflow-hidden p-10 h-full">
     <h1 className="mb-3 font-bold text-blue-200 text-2xl text-center">My Journey so far...</h1>
     
