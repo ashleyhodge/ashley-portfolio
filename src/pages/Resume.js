@@ -1,31 +1,34 @@
 import React from "react";
 import { FaExternalLinkAlt } from 'react-icons/fa'
+import { AiOutlineGithub, AiOutlineDownload } from 'react-icons/ai'
+
 
 const Resume = () => {
   return (
     <div
-        className="max-w-3xl p-3 mx-auto my-auto bg-gray-100 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white">
+        className="max-w-3xl mb-4 p-3 mx-auto my-auto bg-gray-100 shadow-lg page lg:h-letter md:max-w-letter md:h-letter sm:p-9 md:p-16 lg:mt-6 rounded">
         {/* <!-- Name ----------------------------------------------------------------------------------------------------> */}
+        <a href="/Ashley_Hodge_Resume.pdf" download={"ashley_hodge_resume.pdf"}><AiOutlineDownload className="fill-blue-200" size={30}/> </a>
         <header
-          className="inline-flex items-baseline justify-between w-full mb-3 align-top border-b-8">
+          className="inline-flex items-baseline justify-between w-full mb-3 align-top border-b-4 border-blue-50">
           <div className="block">
-            <h1 className="mb-0 text-4xl font-bold text-gray-750">
+            <h1 className="mb-0 text-4xl font-bold text-blue-200">
               Ashley Annette Hodge
             </h1>
             {/* <!--Job Title---------------------------------------------------------------------------------------------------------> */}
             <h2
-              className="m-0 ml-2 text-2xl font-semibold text-gray-700 leading-snugish">
+              className="m-0 ml-2 text-2xl font-semibold text-blue-100 leading-snugish">
               Full Stack Software Developer
             </h2>
             {/* <!--Location ---------------------------------------------------------------------------------------------------------> */}
             <h3
-              className="m-0 mt-2 ml-2 font-semibold text-md text-gray-550 leading-snugish">
+              className="m-0 mt-2 ml-2 font-semibold text-md text-blue-200 leading-snugish">
               Knoxville, TN (willing to relocate)
             </h3>
           </div>
           {/* <!--   Initials Block         --> */}
           <div
-            className="justify-between px-3 mt-0 mb-5 text-3xl font-bold leading-none text-gray-200 initials-container print:bg-black py-6">
+            className="justify-between px-3 mt-0 mb-5 text-3xl font-bold leading-none text-blue-50 initials-container py-6">
             <div className="text-center initial">A</div>
             <div className="text-center initial">A</div>
             <div className="text-center initial">H</div>
@@ -33,60 +36,57 @@ const Resume = () => {
         </header>
         {/* <!-- Column --------------------------------------------------------------------------------------------------> */}
         <div
-          className="col-gap-16 md:col-count-2 print:col-count-2 md:h-letter-col-full print:h-letter-col-full col-fill-balance">
+          className="col-gap-16 md:col-count-2 md:h-letter-col-full col-fill-balance">
           {/* <!-- Contact Information -------------------------------------------------------------------------------------> */}
           <section className="mt-4 first:mt-0">
             {/* <!-- To keep in the same column --------------------------------------------------------------------------> */}
             <div className="break-inside-avoid">
-              <section className="pb-2 mb-2 border-b-2 break-inside-avoid">
+              <section className="pb-2 mb-2 border-b-4 border-blue-50 break-inside-avoid">
                 <ul className="list-inside pr-7">
-                  <li
-                    className="mt-1 leading-normal text-black transition duration-100 ease-in text-gray-550 text-sm hover:text-gray-700 print:">
-                    <a href="https://ashleyhodge.me" className="group">
-                      <span
-                        className="mr-2 text-md font-semibold text-gray-700 leading-snugish">
+                  <li className="mt-1 leading-normal text-sm hover:text-blue-50">
+                    <a href="https://ashleyhodge.me" target="_blank">
+                      <span className="mr-2 text-md font-semibold text-blue-100 leading-snugish">
                         Portfolio:
                       </span>
                       ashleyhodge.me
-                      <span
-                        className="inline-block font-normal text-black transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700 print:">
-                        <FaExternalLinkAlt className="mx-2" />
+                      <span className="inline-block">
+                        <FaExternalLinkAlt className="mx-2 fill-blue-100" />
                       </span>
                     </a>
                   </li>
                   <li
-                    className="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-sm hover:text-gray-700">
-                    <a href="https://github.com/ashleyhodge" className="group">
+                    className="mt-1 leading-normal text-sm hover:text-blue-50">
+                    <a href="https://github.com/ashleyhodge" target="_blank">
                       <span
-                        className="mr-5 text-md font-semibold text-gray-700 leading-snugish">
+                        className="mr-5 text-md font-semibold text-blue-100 leading-snugish">
                         Github:
                       </span>
                       ashleyhodge
                       <span
-                        className="inline-block font-normal text-black transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700 print:">
-                        <FaExternalLinkAlt className="mx-2" />
+                        className="inline-block">
+                        <FaExternalLinkAlt className="mx-2 fill-blue-100" />
                       </span>
                     </a>
                   </li>
                   <li
-                    className="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-sm hover:text-gray-700">
+                    className="mt-1 leading-normal text-sm hover:text-blue-50">
                     <a href="mailto:ashhodge@comcast.net" className="group">
                       <span
-                        className="mr-8 text-md font-semibold text-gray-700 leading-snugish">
+                        className="mr-7 text-md font-semibold text-blue-100 leading-snugish">
                         Email:
                       </span>
                       ashhodge@comcast.net
                       <span
-                        className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700">
-                        <FaExternalLinkAlt className="mx-2" />
+                        className="inline-block font-normal">
+                        <FaExternalLinkAlt className="mx-2 fill-blue-100" />
                       </span>
                     </a>
                   </li>
                   <li
-                    className="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-sm hover:text-gray-700">
+                    className="mt-1 leading-normal text-sm hover:text-blue-50">
                     <a href="tel:+18657654952">
                       <span
-                        className="mr-5 text-md font-semibold text-gray-700 leading-snugish">
+                        className="mr-5 text-md font-semibold text-blue-100 leading-snugish">
                         Phone:
                       </span>
                       +1(865)765-4952
@@ -97,11 +97,11 @@ const Resume = () => {
             </div>
           </section>
           {/* <!--Summary ----------------------------------------------------------------------------------------------------------> */}
-          <section className="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
+          <section className="pb-2 pb-4 mt-4 border-b-4 border-blue-50 first:mt-0">
             {/* <!-- To keep in the same column --> */}
             <div className="break-inside-avoid">
               <h2
-                className="mb-2 text-md font-bold tracking-widest text-gray-700 print:font-normal">
+                className="mb-2 text-md font-bold tracking-widest text-blue-200">
                 SUMMARY
               </h2>
               <section className="mb-2 break-inside-avoid">
@@ -111,117 +111,117 @@ const Resume = () => {
               </section>
             </div>
           </section>
+          
           <div className="grid grid-cols-2">
           {/* <!--Experience ------------------------------------------------------------------------------------------------------> */}
-          <section className=" mt-2 border-b-4 first:mt-0">
+          <section className=" border-b-4 border-blue-50 first:mt-0">
             {/* <!-- To keep in the same column -------------------------------------------------------------------------> */}
             <div className="break-inside-avoid">
-              <h2 className="mb-2 text-md font-bold tracking-widest text-gray-700 print:font-normal">
+              <h2 className="mb-2 mt-4 text-md font-bold tracking-widest text-blue-200">
                 EXPERIENCE
               </h2>
               {/* <!--Job 1--> */}
               <section className="mb-2 break-inside-avoid">
                 <header>
                   <h3
-                    className="text-md font-semibold text-gray-650 leading-snugish">
+                    className="text-md font-semibold text-blue-100 leading-snugish">
                     Youth Substance Abuse Prevention Specialist 
                   </h3>
-                  <p className="leading-normal text-sm text-gray-550">
+                  <p className="leading-normal text-sm text-blue-200">
                     August 2021 &ndash; August 2022 | Sidney, MT
                   </p>
                 </header>
                 <ul className="mt-2.1 text-sm text-gray-700 leading-normal pr-2">
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                       &#x029EB; 
                     </span>
                     Served as program coordinator for ensuring drug-free communities. 
                   </li>
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                       &#x029EB;
                     </span>
                     Planned and coordinated strategic county-wide youth substance abuse prevention coalition programs.
                   </li>
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                       &#x029EB;
                     </span>
                     Arranged and led in-person and online coalition meetings with law enforcement, healthcare, public school, local media, and mental health representatives to enforce policies and regulations. 
                   </li>
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                       &#x029EB;
                     </span>
                     Leveraged technical skills to prepare original content and execute all social media platforms for The Dry Society.
                   </li>
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                     &#x029EB;
                     </span>
                     provided commentary to improve maintainability
                   </li>
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                       &#x029EB;
                     </span>
                     Played key role in establishing Drug-Free Communities by developing and implementing robust strategic / action plans.
                   </li>
                   <li>
-                    <span className="transform -translate-y-px select-none text-gray-550">
+                    <span className="mr-2 text-gray-500">
                       &#x029EB;
                     </span>
                     Scheduled and executed prevention events for over 300 students.
                   </li>
                 </ul>
               </section>
-              {/* <!--                Additional Jobs Would Go Here--> */}
             </div>
           </section>
           
           {/* <!--Education --------------------------------------------------------------------------------------------------------> */}
-          <section className=" pb-4 mt-1 border-b-4 ml-3 first:mt-0">
+          <section className=" pb-4 mt-4 border-b-4 border-blue-50 ml-3 first:mt-0">
             {/* <!-- To keep in the same column --> */}
             <div className="break-inside-avoid">
-              <h2 className="mb-2 text-md font-bold tracking-widest text-gray-700 print:font-normal">
+              <h2 className="mb-2 text-md font-bold tracking-widest text-blue-200">
                 EDUCATION
               </h2>
               {/* <!-- school ---------------------------------------------------------------------------> */}
-              <section className="pb-4 mt-4 mb-4 border-b-2 break-inside-avoid">
+              <section className="pb-4 mt-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3 className="flex-grow text-md font-semibold text-gray-700 leading-snugish">
+                  <h3 className="flex-grow text-md font-semibold text-blue-100 leading-snugish">
                     Vanderbilt University
                   </h3>
-                  <p className="leading-normal text-sm text-gray-550">
+                  <p className="leading-normal text-sm text-gray-700">
                     2021 &ndash; 2022 | Certificate
                   </p>
                 </header>
-                <p className="mt-1 leading-normal text-sm text-gray-650">
+                <p className="mt-1 leading-normal text-sm text-blue-200">
                   <span
-                    className="font-semibold text-gray-700 text-md leading-snugish">
+                    className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
                     Subject: 
                   </span>
                   Full Stack Web Development
                 </p>
               </section>
               {/* <!--school 2---------------------------------------------------------------------------------------------> */}
-              <section className="pb-4 mt-4 mb-4 border-b-2 break-inside-avoid">
+              <section className="pb-4 mt-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3 className="flex-grow text-md font-semibold text-gray-700 leading-snugish">
+                  <h3 className="flex-grow text-md font-semibold text-blue-100 leading-snugish">
                     University of Tennessee
                   </h3>
-                  <p className="leading-normal text-sm text-gray-550">
+                  <p className="leading-normal text-sm text-gray-700">
                     2016 &ndash; 2020 | Bachelor of Arts
                   </p>
                 </header>
-                <p className="mt-1 leading-normal text-sm text-gray-650">
-                  <span className="font-semibold text-gray-700 text-md leading-snugish">
+                <p className="mt-1 leading-normal text-sm text-blue-200">
+                  <span className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
                     Major:
                   </span>
                   Psychology
                 </p>
-                <p className="leading-normal text-gray-700 text-sm">
-                  <span className="font-semibold text-gray-700 text-sm leading-snugish">
+                <p className="leading-normal text-blue-200 text-sm">
+                  <span className="font-semibold text-blue-100 mr-2 text-sm leading-snugish">
                     Minor:
                   </span>
                   Business Administration
@@ -230,15 +230,15 @@ const Resume = () => {
               {/* <!--school 3 ---------------------------------------------------------------------------------> */}
               <section className="pb-4 mt-4 mb-4 break-inside-avoid">
                 <header>
-                  <h3 className="flex-grow text-md font-semibold text-gray-700 leading-snugish">
+                  <h3 className="flex-grow text-md font-semibold text-blue-100 leading-snugish">
                     Pellissippi State Community College
                   </h3>
-                  <p className="leading-normal text-sm text-gray-550">
+                  <p className="leading-normal text-sm text-gray-700">
                     2014 &ndash; 2016 | Associates of Science
                   </p>
                 </header>
-                <p className="mt-1 leading-normal text-sm text-gray-650">
-                  <span className="font-semibold text-gray-700 text-md leading-snugish">
+                <p className="mt-1 leading-normal text-sm text-blue-200">
+                  <span className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
                     Subject:
                   </span>
                   Biology
@@ -248,42 +248,33 @@ const Resume = () => {
           </section>
           </div>
           {/* <!--Projects ----------------------------------------------------------------------------------------------------------> */}
-          <section className="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
+          <section className="pb-2 pb-4 mt-4 border-b-4 border-blue-50 first:mt-0">
             <div className="break-inside-avoid">
               {/* <!-- To keep in the same column --> */}
-              <h2 className="mb-2 text-md font-bold tracking-widest text-gray-700 print:font-normal">
+              <h2 className="mb-2 text-md font-bold tracking-widest text-blue-200">
                 PROJECTS
               </h2>
               {/* <!--Project 1 ---------------------------------------------------------------------------------------------------------> */}
-              <section className="pb-4 mb-4 border-b-2 break-inside-avoid">
+              <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3 className="text-lg font-semibold text-gray-700 leading-snugish">
-                    <a
-                      href="https://github.com/WebPraktikos/universal-resume"
-                      className="group"
-                    >
+                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
+                    <a href="https://github.com/WebPraktikos/universal-resume" target="_blank">
                       Portfolio Website
-                      <span
-                        className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                      >
-                        ↗
+                      <span className="inline-block mr-3">
+                        <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
                       </span>
                     </a>
-                    <span
-                      className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                    >
-                      <a
-                        href="https://github.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site"
-                      >
-                        <i className="fab fa-github"></i>
+                    <span className="inline-block">
+                      <a href="https://github.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site" target="_blank">
+                        <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
                       </a>
                     </span>
                   </h3>
-                  <p className="leading-normal text-md text-gray-550">
-                    Since 2019 | JSX, React, Next.js, SCSS
+                  <p className="leading-normal text-sm text-blue-200">
+                    Since 2022 | JSX, React, Node.js, Tailwind.css
                   </p>
                 </header>
-                <p className="mt-2.1 text-md text-gray-700 leading-normal">
+                <p className="mt-2.1 text-sm text-gray-600 leading-normal">
                   A unique and streamlined developer portfolio site that
                   combines the useful aspect of development portfolios with a
                   blog using Next.js. Interface is clean and features graphics
@@ -291,116 +282,115 @@ const Resume = () => {
                 </p>
               </section>
               {/* <!--Project 2--> */}
-              <section className="pb-4 mb-4 border-b-2 break-inside-avoid">
+              <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3
-                    className="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    <a
-                      href="https://github.com/WebPraktikos/tailwindcss-rich-docs"
-                      className="group"
-                    >
-                      Keeper CRM
-                      <span
-                        className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                      >
-                        ↗
+                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
+                    <a href='https://hanzai-watchers.herokuapp.com/' target="_blank">
+                      Hanzai Watchers (Crime Watchers)
+                      <span className="inline-block mr-3">
+                      <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
                       </span>
                     </a>
-                    <span
-                      className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                    >
-                      <a
-                        href="https://github.com/Thomashighbaugh/mern-contact-keeper"
-                      >
-                        <i className="fab fa-github"></i>
+                    <span className="inline-block">
+                      <a href='https://github.com/ashleyhodge/anime_crime-watchers' target="_blank">
+                      <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
                       </a>
                     </span>
                   </h3>
-                  <p className="leading-normal text-md text-gray-550">
-                    2021 | MERN
+                  <p className="leading-normal text-sm text-blue-200">
+                    Completed 2022 | MERN Stack
                   </p>
                 </header>
-                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                  Written as part of the process of learning the MERN stack,
-                  this application stores contacts for registered users and
-                  saves the information they input between sessions.
-                </p>
+                <ul className="mt-2.1 text-sm text-gray-600 leading-normal pr-2">
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Developed an application designed to allow users for submitting crime tips as well as meet others who feel passionately about serving their community and stopping crime.
+                  </li>
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Utilized tools such as React, React-Bootstrap, Redux, JavaScript, animate.css, tailwind.css, Node, Express, MongoDB, Mongoose, GraphQL, Apollo, and deployed with Heroku.
+                  </li>
+                </ul>
               </section>
               {/* <!--Project 3----------------------------------------------------------> */}
-              <section className="pb-4 mb-4 border-b-2 break-inside-avoid">
+              <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3
-                    className="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    <a href="https://g5-blog-ccl-ife.vercel.app/" className="group">
-                      Crazy-Wise Gatsby Starter
-                      <span
-                        className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                      >
-                        ↗
+                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
+                    <a href='https://access-tennesee.herokuapp.com/' target="_blank">
+                      Access Tennessee
+                      <span className="inline-block mr-3">
+                      <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
                       </span>
                     </a>
-                    <span
-                      className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                    >
-                      <a
-                        href="https://github.com/Thomashighbaugh/crazy-wise-gatsby-starter"
-                      >
-                        <i className="fab fa-github"></i>
+                    <span className="inline-block">
+                      <a href='https://github.com/ashleyhodge/Access-Tennessee' target="_blank">
+                      <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
                       </a>
                     </span>
                   </h3>
-                  <p className="leading-normal text-md text-gray-550">
-                    2020 | React, Styled Components, Gatsby.js
+                  <p className="leading-normal text-sm text-blue-200">
+                    Completed 2022 | JavaScript, Node.js, HTML5, CSS, Bootstrap, Express.js
                   </p>
                 </header>
-                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                  A starter blog for Gatsby.js that has tinaCMS integrated into
-                  development server to ease the production of content and a
-                  very distinct appearance that is both modern and functional.
-                  All graphics used in the page heroes are custom pieces made
-                  for the site.
-                </p>
+                <ul className="mt-2.1 text-sm text-gray-600 leading-normal pr-2">
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Facilitated individuals by providing chance to rate and directly interact with businesses in community for explaining specific types of impairments/ disabilities needs.
+                  </li>
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Utilized jQuery, basic JavaScript, and Backend with Handlebars and Node dependencies like Animate.css. to implement UI/UX design for Access Tennessee.
+                  </li>
+                </ul>
               </section>
               {/* <!--Project 4----------------------------------------------------------> */}
               <section className="mb-2 break-inside-avoid">
                 <header>
-                  <h3
-                    className="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    <a
-                      href="https://github.com/Thomashighbaugh/Opitx/releases"
-                      className="group"
-                    >
-                      Opitx Markdown Editor
-                      <span
-                        className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                      >
-                        ↗
+                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
+                    <a href='https://d1sl.github.io/symmetrical-robot/' target="_blank">
+                      Sour Screens
+                      <span className="inline-block mr-3">
+                      <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
                       </span>
                     </a>
-                    <span
-                      className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                    >
-                      <a
-                        href="https://github.com/Thomashighbaugh/Opitx/releases"
-                      >
-                        <i className="fab fa-github"></i>
+                    <span className="inline-block">
+                      <a href='https://github.com/ashleyhodge/symmetrical-robot' target="_blank">
+                        <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50" />
                       </a>
                     </span>
                   </h3>
-                  <p className="leading-normal text-md text-gray-550">
-                    2019 | Electron, React, SCSS
+                  <p className="leading-normal text-sm text-blue-200">
+                    Completed 2021 | HTML5, CSS, JavaScript, RestAPI
                   </p>
                 </header>
-                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                  An answer to a personal problem with Markdown editors avalable
-                  on Linux which provided a less than transparent process of
-                  saving in user defined locations that evolved into a Markdown
-                  editor written using electron and packaged for all major Linux
-                  distributions.
-                </p>
+                <ul className="mt-2.1 text-sm text-gray-600 leading-normal pr-2">
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Designed website allows to search for an actor / actress and present list of movies with most poorly rated.
+                  </li>
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Implemented UI/UX design for this project; Utilized Movie Database API for data of actors and movie ratings.
+                  </li>
+                  <li>
+                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
+                      &#x029EB; 
+                    </span>
+                    Utilized JavaScript, jQuery, IMDb API, HTML, CSS, and Bootstrap during project.
+                  </li>
+                </ul>
               </section>
             </div>
           </section>
@@ -408,214 +398,78 @@ const Resume = () => {
           <section className="pb-4 mt-4 first:mt-0">
             {/* <!-- To keep in the same column --> */}
             <div className="break-inside-avoid">
-              <h2
-                className="mb-2 text-lg font-bold tracking-widest text-gray-700 print:font-normal"
-              >
+              <h2 className="mb-2 text-md font-bold tracking-widest text-blue-200">
                 SKILLS
               </h2>
-              {/* <!--Full Stack Development -------------------------------------------------------------------------------------------> */}
               <section className="mb-2 break-inside-avoid">
-                <header>
-                  <h3
-                    className="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Full Stack Web Development
-                  </h3>
-                </header>
 
                 <div className="my-1 last:pb-1">
-                  <ul
-                    className="flex flex-wrap text-sm2 leading-relaxed -mr-1.6 -mb-1"
-                  >
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                  <ul className="flex flex-wrap text-sm2 leading-relaxed -mr-1.6-mb-1">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       HTML5
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       CSS3
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      SCSS
-                    </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       Tailwind.css
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      LESS
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      animate.css
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      Bootstrap
+                    </li>
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       Javascript
                     </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Typescript
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       Node.js
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       JSX
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       React
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       React-Router
                     </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Next.js
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      MySQL
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Redux
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      Sequelize
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Vue
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       Express.js
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       NoSQL
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       MongoDB
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      MERN
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      Mongoose
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      PHP
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      Apollo
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      LAMP
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      GraphQL
                     </li>
-                  </ul>
-                </div>
-              </section>
-
-              {/* <!--DevOps ------------------------ -------------------------------------------------------------------------------------------> */}
-
-              <section className="mb-2 break-inside-avoid">
-                <header>
-                  <h3
-                    className="font-semibold text-gray-700 text-m leading-snugish"
-                  >
-                    DevOps
-                  </h3>
-                </header>
-                <div className="my-1 last:pb-1">
-                  <ul
-                    className="flex flex-wrap text-sm2 leading-relaxed -mr-1.6 -mb-1"
-                  >
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Docker
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      RestAPIs
                     </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Docker-Compose
-                    </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Version Control
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
                       Git
                     </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      CI/CD
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      Version Control
                     </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      GitLab Pipelines
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Github Actions
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Jenkins
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      AWS
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Google Cloud
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Firebase
-                    </li>
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Serverless Hosting
-                    </li>
-
-                    <li
-                      className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-                    >
-                      Linux
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                      UI/ UX Design
                     </li>
                   </ul>
                 </div>
