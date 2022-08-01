@@ -10,12 +10,14 @@ const Home = () => {
     <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
     
 	{/* <!--Main Col--> */}
-	<div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+	<div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white mx-6 lg:mx-0">
 	
 
 		<div className="p-4 md:p-12 text-center lg:text-left">
 			{/* <!-- Image for mobile view--> */}
-			<div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"></div>
+			<div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-auto bg-center">
+				<img src={require("./images/mobile-profile.png")} className="rounded-full shadow-xl w-48 h-48 object-contain"></img>
+			</div>
 			
 			<h1 className="text-3xl font-bold pt-8 lg:pt-0">Ashley Hodge</h1>
 			<div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-200 "></div>
@@ -43,7 +45,7 @@ const Home = () => {
 	{/* <!--Img Col--> */}
 	<div className="w-full lg:w-2/5">
 		{/* <!-- Big profile image for side bar (desktop) --> */}
-		<img src="./images/profile-pic.JPG" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
+		<img src={require("./images/profile-pic.JPG")} className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
 		
 	</div>
 	
