@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ashley-portfolio/static/css/main.f9fe44f7.css",
-    "main.js": "/ashley-portfolio/static/js/main.53d690e0.js",
+    "main.js": "/ashley-portfolio/static/js/main.bbfc1599.js",
     "static/media/Hanzai Watchers.GIF": "/ashley-portfolio/static/media/Hanzai Watchers.914c41ad8aed4197c66e.GIF",
     "static/media/Access Tennessee.GIF": "/ashley-portfolio/static/media/Access Tennessee.30f056a645bd06d71cb7.GIF",
     "static/media/Sour Stats.GIF": "/ashley-portfolio/static/media/Sour Stats.e948bd2d127de4a2cd68.GIF",
@@ -16,10 +16,10 @@
     "static/media/boot_camp.JPG": "/ashley-portfolio/static/media/boot_camp.62523f0ebce55eef0f61.JPG",
     "index.html": "/ashley-portfolio/index.html",
     "main.f9fe44f7.css.map": "/ashley-portfolio/static/css/main.f9fe44f7.css.map",
-    "main.53d690e0.js.map": "/ashley-portfolio/static/js/main.53d690e0.js.map"
+    "main.bbfc1599.js.map": "/ashley-portfolio/static/js/main.bbfc1599.js.map"
   },
   "entrypoints": [
     "static/css/main.f9fe44f7.css",
-    "static/js/main.53d690e0.js"
+    "static/js/main.bbfc1599.js"
   ]
 }
