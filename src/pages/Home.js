@@ -32,11 +32,11 @@ const Home = () => {
 			</div>
 
 			<div className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-				<a className="link" href="#" data-tippy-content="@facebook_handle"><AiFillFacebook className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
-				<a className="link" href="#" data-tippy-content="@twitter_handle"><FaTwitter className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
-				<a className="link" href="#" data-tippy-content="@github_handle"><AiOutlineGithub className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
-				<a className="link" href="#" data-tippy-content="@instagram_handle"><AiOutlineInstagram className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
-				<a className="link" href="#" data-tippy-content="@instagram_handle"><AiFillLinkedin className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
+				<a className="link" href="https://www.facebook.com/ashley.hodge.7165" data-tippy-content="@facebook_handle"><AiFillFacebook className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
+				<a className="link" href="https://twitter.com/Ashley__Hodge" data-tippy-content="@twitter_handle"><FaTwitter className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
+				<a className="link" href="https://github.com/ashleyhodge" data-tippy-content="@github_handle"><AiOutlineGithub className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
+				<a className="link" href="https://www.instagram.com/ashley__hodge/" data-tippy-content="@instagram_handle"><AiOutlineInstagram className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
+				<a className="link" href="https://www.linkedin.com/in/ashley-hodge/" data-tippy-content="@instagram_handle"><AiFillLinkedin className="fill-blue-200 hover:fill-blue-100" size={30}/></a>
 			</div>
 		</div>
 
