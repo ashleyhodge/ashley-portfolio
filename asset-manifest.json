@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/ashley-portfolio/static/css/main.4abe2acc.css",
-    "main.js": "/ashley-portfolio/static/js/main.7b8b17b7.js",
+    "main.css": "/ashley-portfolio/static/css/main.f9fe44f7.css",
+    "main.js": "/ashley-portfolio/static/js/main.f7c07adf.js",
+    "static/media/Hanzai Watchers.GIF": "/ashley-portfolio/static/media/Hanzai Watchers.914c41ad8aed4197c66e.GIF",
+    "static/media/Access Tennessee.GIF": "/ashley-portfolio/static/media/Access Tennessee.30f056a645bd06d71cb7.GIF",
+    "static/media/Sour Stats.GIF": "/ashley-portfolio/static/media/Sour Stats.e948bd2d127de4a2cd68.GIF",
+    "static/media/mobile-profile.png": "/ashley-portfolio/static/media/mobile-profile.093a73829aa5970fd829.png",
+    "static/media/sour-screens.JPG": "/ashley-portfolio/static/media/sour-screens.64077f7d340deb8bc15f.JPG",
+    "static/media/americorps.JPG": "/ashley-portfolio/static/media/americorps.b8c0b8890ce7d411126e.JPG",
+    "static/media/crime-report.JPG": "/ashley-portfolio/static/media/crime-report.069439cfa7614263aecb.JPG",
+    "static/media/access_tn.JPG": "/ashley-portfolio/static/media/access_tn.764ac996d968dfb1ce6d.JPG",
     "static/media/school.jpg": "/ashley-portfolio/static/media/school.28a46ec0c9450e6f5fd9.jpg",
+    "static/media/profile-pic.JPG": "/ashley-portfolio/static/media/profile-pic.0f642515bb6d77bad65d.JPG",
+    "static/media/continuingeducation.JPG": "/ashley-portfolio/static/media/continuingeducation.27a4459de364914f36ab.JPG",
+    "static/media/boot_camp.JPG": "/ashley-portfolio/static/media/boot_camp.62523f0ebce55eef0f61.JPG",
     "index.html": "/ashley-portfolio/index.html",
-    "main.4abe2acc.css.map": "/ashley-portfolio/static/css/main.4abe2acc.css.map",
-    "main.7b8b17b7.js.map": "/ashley-portfolio/static/js/main.7b8b17b7.js.map"
+    "main.f9fe44f7.css.map": "/ashley-portfolio/static/css/main.f9fe44f7.css.map",
+    "main.f7c07adf.js.map": "/ashley-portfolio/static/js/main.f7c07adf.js.map"
   },
   "entrypoints": [
-    "static/css/main.4abe2acc.css",
-    "static/js/main.7b8b17b7.js"
+    "static/css/main.f9fe44f7.css",
+    "static/js/main.f7c07adf.js"
   ]
 }
