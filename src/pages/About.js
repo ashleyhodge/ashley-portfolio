@@ -13,7 +13,7 @@ const About = () => {
     <div className="mb-8 sm:flex items-center w-full right-timeline">
       <div className="order-1 sm:w-5/12 w-px"></div>
 
-      <img className="z-20 flex items-center order-1 sm:shadow-xl  md:w-1/2 md:h-60  rounded-t-lg md:rounded-l-lg md:rounded-r-none lg:rounded-lg" src="/images/school.JPG"></img>
+      <img className="z-20 flex items-center order-1 sm:shadow-xl  md:w-1/2 md:h-60  rounded-t-lg md:rounded-l-lg md:rounded-r-none lg:rounded-lg" src={require('./school.jpg')} alt="school"></img>
       <div className="order-1 bg-blue-50 rounded-b-lg md:rounded-lg md lg:rounded-l-none shadow-xl px-6 py-4">
         
         <h3 className="mb-3 font-bold text-gray-800 text-xl">Graduated from the University of Tennessee with a B.A. in Psychology</h3>
