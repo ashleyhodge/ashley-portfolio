@@ -44,11 +44,11 @@ const Resume = () => {
               <section className="pb-2 mb-2 border-b-4 border-blue-50 break-inside-avoid">
                 <ul className="list-inside pr-7">
                   <li className="mt-1 leading-normal text-sm hover:text-blue-50">
-                    <a href="https://ashleyhodge.me" target="_blank">
+                    <a href="https://www.ashleyhodge.me" target="_blank">
                       <span className="mr-2 text-md font-semibold text-blue-100 leading-snugish">
                         Portfolio:
                       </span>
-                      ashleyhodge.me
+                      www.ashleyhodge.me
                       <span className="inline-block">
                         <FaExternalLinkAlt className="mx-2 fill-blue-100" />
                       </span>
@@ -56,7 +56,7 @@ const Resume = () => {
                   </li>
                   <li
                     className="mt-1 leading-normal text-sm hover:text-blue-50">
-                    <a href="https://github.com/ashleyhodge" target="_blank">
+                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank">
                       <span
                         className="mr-5 text-md font-semibold text-blue-100 leading-snugish">
                         Github:
@@ -241,7 +241,7 @@ const Resume = () => {
                   <span className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
                     Subject:
                   </span>
-                  Biology
+                  Science
                 </p>
               </section>
             </div>
@@ -258,14 +258,14 @@ const Resume = () => {
               <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
                   <h3 className="text-md font-semibold text-blue-100 leading-snugish">
-                    <a href="https://github.com/WebPraktikos/universal-resume" target="_blank">
+                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank">
                       Portfolio Website
                       <span className="inline-block mr-3">
                         <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
                       </span>
                     </a>
                     <span className="inline-block">
-                      <a href="https://github.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site" target="_blank">
+                      <a href="https://github.com/ashleyhodge/ashley-portfolio" target="_blank">
                         <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
                       </a>
                     </span>
