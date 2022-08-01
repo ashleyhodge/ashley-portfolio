@@ -13,7 +13,7 @@ const Home = () => {
 	<div id="profile" className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white mx-6 lg:mx-0">
 	
 
-		<div className="p-4 md:p-12 text-center lg:text-left">
+		<div className="p-4 md:p-8 text-center lg:text-left">
 			{/* <!-- Image for mobile view--> */}
 			<div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-auto bg-center">
 				<img src={require("./images/mobile-profile.png")} className="rounded-full shadow-xl w-48 h-48 object-contain"></img>
@@ -23,7 +23,7 @@ const Home = () => {
 			<div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-200 "></div>
 			<p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><FaBriefcase className="mr-4 fill-blue-200"/> Full Stack Software Developer</p>
 			<p className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><MdOutlineMyLocation className="mr-4 fill-blue-200"/> Knoxville, TN (willing to relocate) </p>
-			<p className="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p>
+			<p className="pt-8 text-sm">Hi there! Welcome to my website! My name is Ashley (she/her) and I'm a Full Stack Developer from Knoxville, TN. I graduated from Vanderbilt University Coding Boot Camp in May 2022 and since then I've been working as a freelance developer tob build my portfolio and increase my skill level. Fill free to have a look around and let me know if you would like to discuss my experience, projects, or any job opportunities!</p>
 
 			<div className="pt-12 pb-8">
 				<button className="bg-blue-200 hover:bg-blue-100 text-white font-bold py-2 px-4 rounded-full">
