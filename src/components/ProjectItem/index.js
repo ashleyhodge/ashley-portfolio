@@ -17,7 +17,7 @@ function ProjectItem(item) {
 
   return(
     <div className="flex flex-col max-w-sm bg-egg-50 rounded-lg shadow-lg"> 
-        <img className="rounded-lg" src={`/images/${image}.JPG`} onClick={() => setShowModal(true)} alt={name} />
+        <img className="rounded-lg" src={require(`./images/${image}.JPG`)} onClick={() => setShowModal(true)} alt={name} />
     
     {showModal ? (
       <>
@@ -36,7 +36,7 @@ function ProjectItem(item) {
               </div>
               {/* gif */}
               <div className="flex justify-center items-center pt-2">
-              <img className="border" src={`/gifs/${gif}.GIF`} />
+              <img className="border" src={require(`./gifs/${gif}.GIF`)} />
               </div>
               {/*body*/}
               <div className="relative p-6 flex-auto">
