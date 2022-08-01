@@ -43,7 +43,7 @@ const Home = () => {
 	{/* <!--Img Col--> */}
 	<div className="w-full lg:w-2/5">
 		{/* <!-- Big profile image for side bar (desktop) --> */}
-		<img src="..//images/profile-pic (1).jpg" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
+		<img src="./images/profile-pic.JPG" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
 		
 	</div>
 	

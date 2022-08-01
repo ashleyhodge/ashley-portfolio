@@ -15,7 +15,7 @@ function App() {
         <Nav />
         <Routes>
           <Route
-            path="/"
+            path="/ashley-portfolio"
             element={<Home />}
           />
           <Route 
