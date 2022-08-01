@@ -15,7 +15,7 @@ function Nav() {
           " sm:justify-center sm:static fixed rounded-xl bottom-15 top-12 sm:flex sm:space-x-7 items-center sm:bg-transparent bg-blue-50  sm:w-full w-full sm:text-purple-100 text-white sm:space-y-0 space-y-5 p-2 transition-left"
         }>
                 <li>
-                    <Link to="/ashley-portfolio" className="drop-shadow-lg shadow-black text-purple-50 dark:text-purple-50 hover:underline hover:text-white" aria-current="page">Home</Link>
+                    <Link to="/ashley-portfolio/" className="drop-shadow-lg shadow-black text-purple-50 dark:text-purple-50 hover:underline hover:text-white" aria-current="page">Home</Link>
                 </li>
                 <li>
                     <Link to="/about" className="drop-shadow-lg shadow-black text-purple-50 dark:text-purple-50 hover:underline hover:text-white">About</Link>
