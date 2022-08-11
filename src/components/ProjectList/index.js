@@ -28,7 +28,23 @@ function ProjectList({ currentCategory }) {
       github: 'https://github.com/ashleyhodge/anime_crime-watchers',
       image: 'crime-report',
       gif: 'Hanzai Watchers'
-    }
+    },
+    {
+      name: 'Stanli Jane E-Commerce',
+      link: 'https://hanzai-watchers.herokuapp.com/',
+      description: "Stanli Jane is an e-commerce website made with React, JavaScript, Node.js, Express.js, MongoDB, and the StripeAPI. Here I will be able to sell handcrafted goods through the shop, show off my newest creations through the gallery, schedule appointments for my astrological readings, and  share my thoughts through my personal blog.",
+      github: 'https://github.com/ashleyhodge/upgraded-fiesta',
+      image: 'stanli-jane',
+      gif: 'stanli-jane'
+    },
+    // {
+    //   name: "",
+    //   link: '',
+    //   description: "Stanli Jane is an e-commerce website made with React, JavaScript, Node.js, Express.js, MongoDB, and the StripeAPI. Here I will be able to sell handcrafted goods through the shop, show off my newest creations through the gallery, schedule appointments for my astrological readings, and  share my thoughts through my personal blog.",
+    //   github: "https://github.com/ashleyhodge/upgraded-fiesta",
+    //   image: '',
+    //   gif: 'Stanli Jane'
+    // }
   ];
 
 
