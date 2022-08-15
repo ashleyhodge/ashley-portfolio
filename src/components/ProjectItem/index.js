@@ -16,8 +16,8 @@ function ProjectItem(item) {
   const [showModal, setShowModal] = React.useState(false);
 
   return(
-    <div className="flex flex-col max-w-sm bg-egg-50 rounded-lg shadow-lg"> 
-        <img className="rounded-lg" src={require(`./images/${image}.JPG`)} onClick={() => setShowModal(true)} alt={name} />
+    <div className="flex flex-col max-w-sm bg-egg-50 rounded-lg shadow-lg "> 
+        <img className="rounded cursor-pointer hover:opacity-90" src={require(`./images/${image}.JPG`)} onClick={() => setShowModal(true)} alt={name} />
     
     {showModal ? (
       <>
