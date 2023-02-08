@@ -23,7 +23,7 @@ function ProjectList({ currentCategory }) {
     },
     {
       name: 'Hanzai Watchers',
-      link: 'https://hanzai-watchers.herokuapp.com/',
+      link: 'https://anime-crime-watchers.vercel.app/',
       description: " Hanzai Watchers or Crime Watchers is an application made with React on the frontend and MongoDB on the backend that allows users to connect with other users around the world about crime information in their area. It also allows users to submit crime tips and search for crime in their zip code. The goal of this app is to make people feel like they have a voice. If you see a crime being committed or feel like you or someone else could be in trouble this is a perfect way to get in touch and figure out the best course of action whether it be turning to other users for guidance or submitting a tip.",
       github: 'https://github.com/ashleyhodge/anime_crime-watchers',
       image: 'crime-report',
