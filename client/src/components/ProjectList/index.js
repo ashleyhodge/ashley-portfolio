@@ -7,7 +7,7 @@ function ProjectList({ currentCategory }) {
   const projects = [
     {
       name: 'Access Tennessee',
-      link: 'https://access-tennesee.herokuapp.com/',
+      link: ' ',
       description: 'This applications lets users interact with their favorite local businesses. They are able to communicate with business owners about what kind of accommodations might be needed for certain disabilities or impairments. In turn, the business is also able to provide information about accommodations they already provide and how to access those accommodations.',
       github: 'https://github.com/ashleyhodge/Access-Tennessee',
       image: 'access_tn',
