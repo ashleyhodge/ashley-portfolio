@@ -1,9 +1,9 @@
 const path = require('path');
 const express = require('express');
 const cors = require("cors");
-const { authMiddleware } = require('./utils/auth')
+
 // import ApolloServer
-const { ApolloServer } = require('@apollo-server-express');
+const { ApolloServer } = require('apollo-server-express');
 
 const dotenv = require('dotenv')
 dotenv.config();
@@ -18,7 +18,6 @@ const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: authMiddleware
 });
 
 const app = express();
@@ -31,7 +30,7 @@ app.use(express.json({ limit: '50mb' }));
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   // integrate our Apollo server with the Express application as middleware
-  server.applyMiddleware({ app });
+  
 
   // Serve up static assets
 if (process.env.NODE_ENV === 'production') {
