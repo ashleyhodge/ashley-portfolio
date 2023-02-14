@@ -25,7 +25,11 @@ const projectSchema = new Schema(
       type: String
     },
     images: {
-      type: []
+      type: [String]
+    }, 
+    createdAt: {
+      type: Date,
+      default: Date.now
     }
   },
   {
