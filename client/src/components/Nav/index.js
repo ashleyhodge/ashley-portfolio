@@ -40,7 +40,7 @@ const navToggle = () => setShowNav(!showNav);
                 size={60}
               />
               <ul className={
-                (showNav ? "top-0" : "-top-full") +
+                (showNav ? "top-0" : "-top-[110%]") +
                 " absolute transition-all duration-[1.0s] ease-in-out w-full h-full z-10 bg-white right-0  sm:hidden"
               }>
               <AiOutlineClose
