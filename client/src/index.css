@@ -78,3 +78,73 @@
   @apply text-[10px] md:text-[20px] lg:text-[10px]
 }
 /*  */
+/* About page styles */
+.school-container {
+  @apply sm:flex sm:items-center sm:ml-5 md:ml-10
+}
+.mobile-school {
+  @apply flex justify-end sm:hidden
+}
+.mobile-school-img {
+  @apply absolute w-[150px] sm:w-[200px] rounded-full border-[10px] border-white
+}
+.school-info {
+  @apply bg-[#31A727] bg-opacity-[50%] rounded-[20px] py-[90px] sm:py-[60px] md:py-[30px] px-5 sm:pr-11 md:pr-12 lg:pr-24 text-center sm:text-left sm:w-3/4 lg:w-10/12 
+}
+.job-done {
+  @apply font-bold drop-shadow-md text-[24px] xl:text-[30px]
+}
+.date-abt {
+  @apply font-light drop-shadow-md text-[21px] xl:text-[27px]
+}
+.job-info {
+  @apply font-medium drop-shadow-md text-[18px] xl:text-[25px] pt-3
+}
+.desktop-school {
+  @apply hidden sm:flex sm:justify-end sm:items-center
+}
+.desktop-school-img {
+  @apply absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:mr-5 mdplus:mr-10 lg:mr-5 xl:mr-16 rounded-full border-[10px] border-white
+}
+.americorp-container {
+  @apply sm:flex sm:items-center sm:mr-5 md:mr-10 
+}
+.americorp {
+  @apply flex justify-start items-center 
+}
+.americorp-img {
+  @apply  absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:ml-5 mdplus:ml-10 lg:ml-5 xl:ml-16 rounded-full border-[10px] border-white
+}
+.americorp-info {
+  @apply bg-[#0688FF] bg-opacity-[50%] rounded-[20px] pb-[90px] pt-[70px] sm:py-[60px] md:py-[30px] px-5 sm:pl-11 md:pl-12 lg:pl-24 xl:pl-28 text-center sm:text-right sm:w-3/4 lg:w-10/12
+}
+.bootcamp-container {
+  @apply sm:flex sm:items-center sm:ml-5 md:ml-10
+}
+.mobile-bootcamp {
+  @apply  flex justify-end items-center sm:hidden
+}
+.mobile-bootcamp-img {
+  @apply absolute w-[150px] sm:w-[200px] rounded-full border-[10px] border-white
+}
+.bootcamp-info {
+  @apply bg-[#302DE0] bg-opacity-[50%] rounded-[20px] py-[90px] sm:py-[60px] md:py-[30px] px-5 sm:pr-11 md:pr-12 lg:pr-24 xl:pr-28 text-center sm:text-left sm:w-3/4 lg:w-10/12
+}
+.desktop-bootcamp {
+  @apply hidden sm:flex sm:justify-end sm:items-center
+}
+.desktop-bootcamp-img {
+  @apply absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:mr-5 mdplus:mr-10 lg:mr-5 xl:mr-16 rounded-full border-[10px] border-white
+}
+.learning-container {
+  @apply sm:flex sm:items-center sm:mr-5 md:mr-10 mb-10
+}
+.learning {
+  @apply flex justify-start items-center
+}
+.learning-img {
+  @apply absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:ml-5 mdplus:ml-10 lg:ml-5 xl:ml-16 rounded-full border-[10px] border-white
+}
+.learning-info {
+  @apply bg-[#31A727] bg-opacity-[50%] rounded-[20px] pb-[90px] pt-[70px] sm:py-[60px] md:py-[30px] px-5 sm:pl-11 md:pl-12 lg:pl-24 xl:pl-28 text-center sm:text-right sm:w-3/4 lg:w-10/12
+}
