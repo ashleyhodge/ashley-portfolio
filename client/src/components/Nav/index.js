@@ -13,12 +13,17 @@ const navToggle = () => setShowNav(!showNav);
         {/* Desktop Navigation */}
         <div className="hidden sm:block">
           <ul className="flex m-[20px] justify-around">
+            <Link to='/'>
               <li className="nav">
                 home
               </li>
+            </Link> 
+            <Link to='/about'>
               <li className="nav">
-              about
+                about
               </li>
+            </Link>
+              
               <li className="nav">
                 projects
               </li>

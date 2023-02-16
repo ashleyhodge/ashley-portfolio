@@ -5,6 +5,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@ap
 
 import Home from './pages/Home';
 import Nav from './components/Nav';
+import About from './pages/About';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -26,6 +27,10 @@ function App() {
               <Route 
                 path='/'
                 element={<Home />}
+              />
+              <Route 
+                path='/about'
+                element={<About />}
               />
             </Routes>
           </main>
