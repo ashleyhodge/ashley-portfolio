@@ -23,10 +23,12 @@ const navToggle = () => setShowNav(!showNav);
                 about
               </li>
             </Link>
-              
+            <Link to='/projects'>
               <li className="nav">
                 projects
               </li>
+            </Link>  
+              
               <li className=" nav">
               resume
             </li>

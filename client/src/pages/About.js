@@ -3,6 +3,7 @@ import Americorp from '../assets/images/americorp.png'
 import Vandy from '../assets/images/vandy.png'
 import Learning from '../assets/images/learning.png'
 
+
 const About = () => {
   return(
     <section>
