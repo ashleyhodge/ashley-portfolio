@@ -64,9 +64,11 @@ const navToggle = () => setShowNav(!showNav);
                     about
                   </li>
                 </Link>
-                <li className="nav-mobile">
-                  projects
-                </li>
+                <Link to='/projects'>
+                  <li onClick={navToggle} className="nav-mobile">
+                    projects
+                  </li>
+                </Link>
                 <li className="nav-mobile">
                 resume
                 </li>

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Nav from './components/Nav';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import SingleProject from './pages/SingleProject';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -33,10 +34,10 @@ function App() {
                 path='/about'
                 element={<About />}
               />
-              <Route 
-                path='/projects'
-                element={<Projects />}
-              />
+              <Route path='/projects'>
+                <Route path='singleproject' element={<SingleProject />} />
+                <Route path='' element={<Projects />}/>
+              </Route>
             </Routes>
           </main>
         </Router>
