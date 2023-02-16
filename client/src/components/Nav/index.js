@@ -31,9 +31,7 @@ const navToggle = () => setShowNav(!showNav);
           </ul>
         </div>
         {/* Mobile Navigation */}
-        <div>
-              
-            <div className="m-3">
+            <div className=" m-3">
                 <AiOutlineMenu
                 onClick={navToggle}
                 className="sm:hidden bg-[#D44416] p-3 rounded-full opacity-[50%] text-white"
@@ -41,7 +39,7 @@ const navToggle = () => setShowNav(!showNav);
               />
               <ul className={
                 (showNav ? "top-0" : "-top-[110%]") +
-                " absolute transition-all duration-[1.0s] ease-in-out w-full h-full z-10 bg-white right-0  sm:hidden"
+                " absolute z-20 transition-all duration-[1.0s] ease-in-out w-full h-full z-10 bg-white right-0  sm:hidden"
               }>
               <AiOutlineClose
               onClick={navToggle}
@@ -67,7 +65,6 @@ const navToggle = () => setShowNav(!showNav);
               </div>
               </ul>
             </div>
-          </div>
       </nav>
     </header>
   )

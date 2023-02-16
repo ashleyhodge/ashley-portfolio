@@ -10,3 +10,71 @@
   @apply text-[#D44416] opacity-[50%] text-[40px] m-4
 }
 /*  */
+/* Home Page styles */
+.home-container {
+  @apply my-[5%] lg:mb-5 sm:mx-[10px] lg:mx-[20px]
+}
+.mobile-profile {
+  @apply z-10 absolute w-[200px] sm:w-[170px] sm:top-[600px] rounded-full border-[10px] border-white
+}
+.home-grid {
+  @apply grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 lg:gap-3 xl:gap-10 mt-[100px] sm:mt-[50px]
+}
+.profile-div {
+  @apply bg-[#302DE0] bg-opacity-[50%] text-white text-center rounded-[20px] col-span-3 sm:col-span-2 lg:col-span-3 pt-[100px] sm:pt-[5px] sm:flex sm:flex-col sm:justify-center xl:p-10
+}
+.profile-section {
+  @apply lg:flex lg:justify-around xl:justify-start xl:pl-10
+}
+.name {
+  @apply text-[30px] md:text-[40px] lg:text-[30px] xl:text-[40px] font-bold drop-shadow-md
+}
+.job-div, .location-div {
+  @apply flex items-center justify-center lg:justify-start pb-3 lg:pb-2
+}
+.job {
+  @apply text-[20px] md:text-[30px] lg:text-[20px] xl:text-[30px] drop-shadow-md
+}
+.location {
+  @apply text-[18px] md:text-[28px] lg:text-[18px] xl:text-[25px] font-light drop-shadow-md
+}
+.sm-profile {
+  @apply flex justify-center mt-5 lg:hidden
+}
+.sm-img {
+  @apply hidden sm:block z-10 w-[200px] rounded-full border-[10px] border-white
+}
+.social {
+  @apply flex justify-center lg:justify-start pt-5 lg:py-2
+}
+.lg-profile {
+  @apply flex justify-center mt-5 lg:mt-0 xl:hidden
+}
+.lg-img {
+  @apply hidden lg:block z-10 w-[200px] lg:w-[150px] rounded-full border-[10px] lg:border-[5px] border-white lg:my-2
+}
+.xl-profile {
+  @apply flex z-10 absolute left-[47%] top-[34%] 2xl:left-[49%] 2xl:top-[34%] mt-5 lg:mt-0 hidden xl:block
+}
+.xl-img {
+  @apply xl:w-[230px] rounded-full border-[10px] lg:border-[5px] xl:border-[10px] border-white lg:my-2
+}
+.description {
+  @apply bg-[#0688FF] bg-opacity-[50%] text-white rounded-[20px] p-5 lg:px-10 xl:p-10 col-span-3 sm:col-span-2 lg:col-span-2 lg:row-span-2 text-[20px] sm:text-[19px] md:text-[22px] lg:text-[20px] xl:text-[25px] 2xl:text-[30px] font-light flex items-center text-center
+}
+.skills-container {
+  @apply bg-[#31A727] opacity-[50%] text-white text-[30px] md:text-[40px] lg:text-[25px] rounded-[20px] p-5 lg:py-[5px] xl:p-10 col-span-3 sm:col-span-4 lg:col-span-3
+}
+.react {
+  @apply text-[10px] md:text-[20px] lg:text-[10px] mt-2 lg:mt-0
+}
+.bar {
+  @apply  bg-[#D44416] text-[8px] font-medium text-end p-0.5 leading-none rounded-full
+}
+.progress {
+  @apply w-full bg-white border-[1px] rounded-full mb-1
+}
+.label {
+  @apply text-[10px] md:text-[20px] lg:text-[10px]
+}
+/*  */
