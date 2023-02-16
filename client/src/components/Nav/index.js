@@ -52,12 +52,16 @@ const navToggle = () => setShowNav(!showNav);
               className="bg-[#D44416] p-3 rounded-full opacity-[50%] text-white m-3"
               />
               <div className="flex flex-col items-center pt-14">
-                <li className="nav-mobile">
-                  home
-                </li>
-                <li className="nav-mobile">
-                about
-                </li>
+                <Link to='/'>
+                  <li onClick={navToggle} className="nav-mobile">
+                    home
+                  </li>
+                </Link>
+                <Link to='/about' >
+                  <li onClick={navToggle} className="nav-mobile">
+                    about
+                  </li>
+                </Link>
                 <li className="nav-mobile">
                   projects
                 </li>
