@@ -22,7 +22,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div>
-        <Router>
+        <Router basename='/'>
           <main>
             <Nav />
             <Routes>
