@@ -41,8 +41,8 @@ const navToggle = () => setShowNav(!showNav);
             <div className=" m-3">
                 <AiOutlineMenu
                 onClick={navToggle}
-                className="sm:hidden bg-[#D44416] p-3 rounded-full opacity-[50%] text-white"
-                size={60}
+                className="sm:hidden bg-[#D44416] p-3 rounded-full opacity-[50%] text-[60px] text-white"
+                // size={60}
               />
               <ul className={
                 (showNav ? "top-0" : "-top-[110%]") +
@@ -50,8 +50,8 @@ const navToggle = () => setShowNav(!showNav);
               }>
               <AiOutlineClose
               onClick={navToggle}
-              size={60}
-              className="bg-[#D44416] p-3 rounded-full opacity-[50%] text-white m-3"
+              // size={60}
+              className="bg-[#D44416] p-3 rounded-full opacity-[50%] text-[60px] text-white m-3"
               />
               <div className="flex flex-col items-center pt-14">
                 <Link to='/'>
