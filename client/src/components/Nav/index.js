@@ -28,10 +28,12 @@ const navToggle = () => setShowNav(!showNav);
                 projects
               </li>
             </Link>  
-              
+            <Link to='/resume'>
               <li className=" nav">
-              resume
-            </li>
+                resume
+              </li>
+            </Link> 
+              
               <li className=" nav">
               contact
             </li>
@@ -69,9 +71,12 @@ const navToggle = () => setShowNav(!showNav);
                     projects
                   </li>
                 </Link>
-                <li className="nav-mobile">
-                resume
-                </li>
+                <Link to='/resume'>
+                  <li onClick={navToggle} className="nav-mobile">
+                    resume
+                  </li>
+                </Link>
+                
                 <li className="nav-mobile">
                 contact
                 </li>
