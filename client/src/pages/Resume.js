@@ -5,87 +5,76 @@ import { AiOutlineGithub, AiOutlineDownload } from 'react-icons/ai'
 const Resume = () => {
   return (
     <div
-        className="max-w-3xl mb-4 p-3 mx-auto my-auto bg-gray-100 shadow-lg page lg:h-letter md:max-w-letter md:h-letter sm:p-9 md:p-16 lg:mt-6 rounded">
-        {/* <!-- Name ----------------------------------------------------------------------------------------------------> */}
-        <a href="/Ashley_Hodge_Resume.pdf" download={"ashley_hodge_resume.pdf"}><AiOutlineDownload className="fill-blue-200" size={30}/> </a>
-        <header
-          className="inline-flex items-baseline justify-between w-full mb-3 align-top border-b-4 border-blue-50">
-          <div className="block">
-            <h1 className="mb-0 text-4xl font-bold text-blue-200">
+        className="max-w-3xl mb-4 p-3 mx-auto my-auto lg:h-letter md:max-w-letter md:h-letter sm:p-9 md:p-16 lg:mt-6 rounded opacity-[50%]">
+        {/* Name */}
+        {/* DOES NOT WORK */}
+        <a href="../../assets/Ashley_Hodge_Resume.pdf" download={"Ashley_Hodge_Resume.pdf"} className='flex justify-end'><AiOutlineDownload size={30}/> </a>
+        {/*  */}
+        <header className="w-full mb-3 align-top">
+          <div className="block text-center sm:text-left">
+            <h1 className="text-4xl font-bold ">
               Ashley Annette Hodge
             </h1>
-            {/* <!--Job Title---------------------------------------------------------------------------------------------------------> */}
-            <h2
-              className="m-0 ml-2 text-2xl font-semibold text-blue-100 leading-snugish">
-              Full Stack Software Developer
+            {/* Job Title */}
+            <h2 className="ml-2 text-2xl font-semibold">
+              Software Developer
             </h2>
-            {/* <!--Location ---------------------------------------------------------------------------------------------------------> */}
+            {/* Location */}
             <h3
-              className="m-0 mt-2 ml-2 font-semibold text-md text-blue-200 leading-snugish">
+              className="mt-2 ml-2 text-md">
               Knoxville, TN (willing to relocate)
             </h3>
           </div>
-          {/* <!--   Initials Block         --> */}
-          <div
-            className="justify-between px-3 mt-0 mb-5 text-3xl font-bold leading-none text-blue-50 initials-container py-6">
-            <div className="text-center initial">A</div>
-            <div className="text-center initial">A</div>
-            <div className="text-center initial">H</div>
-          </div>
         </header>
-        {/* <!-- Column --------------------------------------------------------------------------------------------------> */}
-        <div
-          className="col-gap-16 md:col-count-2 md:h-letter-col-full col-fill-balance">
-          {/* <!-- Contact Information -------------------------------------------------------------------------------------> */}
+        <div className='border-2 border-[#31A727] rounded'></div>
+        {/* Column */}
+        <div className="col-gap-16 md:col-count-2 md:h-letter-col-full col-fill-balance">
+          {/* Contact Information */}
           <section className="mt-4 first:mt-0">
-            {/* <!-- To keep in the same column --------------------------------------------------------------------------> */}
+            {/*  To keep in the same column */}
             <div className="break-inside-avoid">
-              <section className="pb-2 mb-2 border-b-4 border-blue-50 break-inside-avoid">
-                <ul className="list-inside pr-7">
-                  <li className="mt-1 leading-normal text-sm hover:text-blue-50">
-                    <a href="https://www.ashleyhodge.me" target="_blank">
-                      <span className="mr-2 text-md font-semibold text-blue-100 leading-snugish">
+              <section className="pb-2 mb-2 break-inside-avoid">
+                <ul className="pr-7">
+                  <li className="mt-1 leading-normal text-sm">
+                    <a href="https://www.ashleyhodge.me" target="_blank" rel="noreferrer" className='flex items-center font-light'>
+                      <span className="mr-2 text-md font-semibold">
                         Portfolio:
                       </span>
                       www.ashleyhodge.me
-                      <span className="inline-block">
-                        <FaExternalLinkAlt className="mx-2 fill-blue-100" />
+                      <span>
+                        <FaExternalLinkAlt className="mx-2" />
                       </span>
                     </a>
                   </li>
                   <li
-                    className="mt-1 leading-normal text-sm hover:text-blue-50">
-                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank">
+                    className="mt-1 leading-normal text-sm">
+                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank" rel="noreferrer" className='flex items-center font-light'>
                       <span
-                        className="mr-5 text-md font-semibold text-blue-100 leading-snugish">
+                        className="mr-5 text-md font-semibold">
                         Github:
                       </span>
                       ashleyhodge
-                      <span
-                        className="inline-block">
-                        <FaExternalLinkAlt className="mx-2 fill-blue-100" />
+                      <span>
+                        <FaExternalLinkAlt className="mx-2" />
                       </span>
                     </a>
                   </li>
                   <li
-                    className="mt-1 leading-normal text-sm hover:text-blue-50">
-                    <a href="mailto:ashhodge@comcast.net" className="group">
-                      <span
-                        className="mr-7 text-md font-semibold text-blue-100 leading-snugish">
+                    className="mt-1 leading-normal text-sm">
+                    <a href="mailto:ashhodge@comcast.net" className="group flex items-center font-light">
+                      <span className="mr-7 text-md font-semibold">
                         Email:
                       </span>
                       ashhodge@comcast.net
-                      <span
-                        className="inline-block font-normal">
-                        <FaExternalLinkAlt className="mx-2 fill-blue-100" />
+                      <span>
+                        <FaExternalLinkAlt className="mx-2" />
                       </span>
                     </a>
                   </li>
-                  <li
-                    className="mt-1 leading-normal text-sm hover:text-blue-50">
+                  <li className="mt-1 leading-normal text-sm font-light">
                     <a href="tel:+18657654952">
                       <span
-                        className="mr-5 text-md font-semibold text-blue-100 leading-snugish">
+                        className="mr-5 text-md font-semibold">
                         Phone:
                       </span>
                       +1(865)765-4952
@@ -95,149 +84,127 @@ const Resume = () => {
               </section>
             </div>
           </section>
-          {/* <!--Summary ----------------------------------------------------------------------------------------------------------> */}
-          <section className="pb-2 pb-4 mt-4 border-b-4 border-blue-50 first:mt-0">
+          <div className='border-2 border-[#302DE0] rounded'></div>
+          {/* Summary */}
+          <section className="pb-2 pb-4 mt-4 first:mt-0">
             {/* <!-- To keep in the same column --> */}
             <div className="break-inside-avoid">
               <h2
-                className="mb-2 text-md font-bold tracking-widest text-blue-200">
+                className="mb-2 text-md font-bold tracking-widest text-center sm:text-left">
                 SUMMARY
               </h2>
               <section className="mb-2 break-inside-avoid">
-                <p className="mt-2 leading-normal text-gray-700 text-sm">
+                <p className="mt-2 leading-normal text-sm text-center sm:text-left">
                 Creative and technically minded professional with ability to coordinate development and implementation of software programs / applications. Enthusiastic full-stack software engineer; talent for outperforming in fast-paced environment and building scalable and high-performance applications. Aptitude for collaborating with designer and engineer teams for developing innovative solutions to improve user experience. Capacity to resolve queries of customers and provide excellent technical support. Capable of testing and evaluating new programs, while identifying areas of modification / improvement in existing programs. Refined communicator and problem-solver with strong interpersonal, analytical, quick-learning, and attention to detail skills.
                 </p>
               </section>
             </div>
           </section>
-          
-          <div className="grid grid-cols-2">
-          {/* <!--Experience ------------------------------------------------------------------------------------------------------> */}
-          <section className=" border-b-4 border-blue-50 first:mt-0">
-            {/* <!-- To keep in the same column -------------------------------------------------------------------------> */}
+          <div className='border-2 border-[#0688FF] rounded'></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 ">
+          {/* Experience */}
+          <section className="border-b-4 sm:border-r-4 sm:border-b-0 my-6 border-[#31A727] pb-4 sm:pb-0">
+            {/* To keep in the same column */}
             <div className="break-inside-avoid">
-              <h2 className="mb-2 mt-4 text-md font-bold tracking-widest text-blue-200">
+              <h2 className="text-center sm:text-left mb-2 text-lg font-bold tracking-widest">
                 EXPERIENCE
               </h2>
               {/* <!--Job 1--> */}
               <section className="mb-2 break-inside-avoid">
                 <header>
-                  <h3
-                    className="text-md font-semibold text-blue-100 leading-snugish">
+                  <h3 className="text-md font-semibold text-center sm:text-left">
                     Youth Substance Abuse Prevention Specialist 
                   </h3>
-                  <p className="leading-normal text-sm text-blue-200">
+                  <p className="leading-normal font-light pr-2 text-sm text-center sm:text-left">
                     August 2021 &ndash; August 2022 | Sidney, MT
                   </p>
                 </header>
-                <ul className="mt-2.1 text-sm text-gray-700 leading-normal pr-2">
+                <div className='text-sm'>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                      &#x029EB; 
-                    </span>
                     Served as program coordinator for ensuring drug-free communities. 
                   </li>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                      &#x029EB;
-                    </span>
                     Planned and coordinated strategic county-wide youth substance abuse prevention coalition programs.
                   </li>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                      &#x029EB;
-                    </span>
                     Arranged and led in-person and online coalition meetings with law enforcement, healthcare, public school, local media, and mental health representatives to enforce policies and regulations. 
                   </li>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                      &#x029EB;
-                    </span>
                     Leveraged technical skills to prepare original content and execute all social media platforms for The Dry Society.
                   </li>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                    &#x029EB;
-                    </span>
                     provided commentary to improve maintainability
                   </li>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                      &#x029EB;
-                    </span>
                     Played key role in establishing Drug-Free Communities by developing and implementing robust strategic / action plans.
                   </li>
                   <li>
-                    <span className="mr-2 text-gray-500">
-                      &#x029EB;
-                    </span>
                     Scheduled and executed prevention events for over 300 students.
                   </li>
-                </ul>
+                </div>
               </section>
             </div>
           </section>
-          
-          {/* <!--Education --------------------------------------------------------------------------------------------------------> */}
-          <section className=" pb-4 mt-4 border-b-4 border-blue-50 ml-3 first:mt-0">
+          {/* Education */}
+          <section className="pb-4 sm:mt-6 sm:ml-3 text-center sm:text-left">
             {/* <!-- To keep in the same column --> */}
             <div className="break-inside-avoid">
-              <h2 className="mb-2 text-md font-bold tracking-widest text-blue-200">
+              <h2 className="mb-2 text-lg font-bold tracking-widest">
                 EDUCATION
               </h2>
-              {/* <!-- school ---------------------------------------------------------------------------> */}
+              {/* school 1 */}
               <section className="pb-4 mt-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3 className="flex-grow text-md font-semibold text-blue-100 leading-snugish">
+                  <h3 className="flex-grow text-md font-semibold">
                     Vanderbilt University
                   </h3>
-                  <p className="leading-normal text-sm text-gray-700">
+                  <p className="leading-normal text-sm font-light">
                     2021 &ndash; 2022 | Certificate
                   </p>
                 </header>
-                <p className="mt-1 leading-normal text-sm text-blue-200">
+                <p className="mt-1 leading-normal text-sm">
                   <span
-                    className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
+                    className="font-semibold mr-2 text-md">
                     Subject: 
                   </span>
                   Full Stack Web Development
                 </p>
               </section>
-              {/* <!--school 2---------------------------------------------------------------------------------------------> */}
+              {/* school 2 */}
               <section className="pb-4 mt-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
                 <header>
-                  <h3 className="flex-grow text-md font-semibold text-blue-100 leading-snugish">
+                  <h3 className="flex-grow text-md font-semibold">
                     University of Tennessee
                   </h3>
-                  <p className="leading-normal text-sm text-gray-700">
+                  <p className="leading-normal text-sm font-light">
                     2016 &ndash; 2020 | Bachelor of Arts
                   </p>
                 </header>
-                <p className="mt-1 leading-normal text-sm text-blue-200">
-                  <span className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
+                <p className="mt-1 leading-normal text-sm">
+                  <span className="font-semibold mr-2 text-md">
                     Major:
                   </span>
                   Psychology
                 </p>
-                <p className="leading-normal text-blue-200 text-sm">
-                  <span className="font-semibold text-blue-100 mr-2 text-sm leading-snugish">
+                <p className="leading-normal text-sm">
+                  <span className="font-semibold mr-2 text-sm">
                     Minor:
                   </span>
                   Business Administration
                 </p>
               </section>
-              {/* <!--school 3 ---------------------------------------------------------------------------------> */}
+              {/* school 3 */}
               <section className="pb-4 mt-4 mb-4 break-inside-avoid">
                 <header>
-                  <h3 className="flex-grow text-md font-semibold text-blue-100 leading-snugish">
+                  <h3 className="flex-grow text-md font-semibold">
                     Pellissippi State Community College
                   </h3>
-                  <p className="leading-normal text-sm text-gray-700">
+                  <p clasName="leading-normal text-sm font-light">
                     2014 &ndash; 2016 | Associates of Science
                   </p>
                 </header>
-                <p className="mt-1 leading-normal text-sm text-blue-200">
-                  <span className="font-semibold text-blue-100 mr-2 text-md leading-snugish">
+                <p className="mt-1 leading-normal text-sm">
+                  <span className="font-semibold mr-2 text-md">
                     Subject:
                   </span>
                   Science
@@ -246,228 +213,127 @@ const Resume = () => {
             </div>
           </section>
           </div>
-          {/* <!--Projects ----------------------------------------------------------------------------------------------------------> */}
-          <section className="pb-2 pb-4 mt-4 border-b-4 border-blue-50 first:mt-0">
+          <div className='border-2 border-[#D44416] rounded'></div>
+          {/* Projects */}
+          <section className="pb-2 pb-4 mt-4">
             <div className="break-inside-avoid">
               {/* <!-- To keep in the same column --> */}
-              <h2 className="mb-2 text-md font-bold tracking-widest text-blue-200">
+              <h2 className="mb-2 text-lg font-bold tracking-widest text-center sm:text-left">
                 PROJECTS
               </h2>
-              {/* <!--Project 1 ---------------------------------------------------------------------------------------------------------> */}
-              <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
+              {/* Project 1 */}
+              <section className="pb-4 mb-4 break-inside-avoid">
                 <header>
-                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
-                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank">
-                      Portfolio Website
-                      <span className="inline-block mr-3">
-                        <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
-                      </span>
+                  <h3 className="text-md font-semibold flex items-center">
+                    Portfolio Website
+                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank" rel="noreferrer">
+                      <FaExternalLinkAlt className="mx-2"/>
                     </a>
-                    <span className="inline-block">
-                      <a href="https://github.com/ashleyhodge/ashley-portfolio" target="_blank">
-                        <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
-                      </a>
-                    </span>
+                    <a href="https://github.com/ashleyhodge/ashley-portfolio" target="_blank" rel="noreferrer">
+                      <AiOutlineGithub size={20}/>
+                    </a>
                   </h3>
-                  <p className="leading-normal text-sm text-blue-200">
-                    Since 2022 | JSX, React, Node.js, Tailwind.css
+                  <p className="leading-normal text-sm font-light">
+                    Since 2022
+                  </p>
+                  <p className="leading-normal text-sm">
+                    Front:
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>React</button>
+                    </span>
+                  </p>
+                  <p className="leading-normal text-sm">
+                    Back:
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>React</button>
+                    </span>
                   </p>
                 </header>
-                <p className="mt-2.1 text-sm text-gray-600 leading-normal">
+                <p className="mt-2.1 text-sm leading-normal">
                   A unique and streamlined developer portfolio site that
                   combines the useful aspect of development portfolios with a
                   blog using Next.js. Interface is clean and features graphics
                   designed personally for use within the site.
                 </p>
               </section>
-              {/* <!--Project 2--> */}
-              <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
-                <header>
-                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
-                    <a href='https://hanzai-watchers.herokuapp.com/' target="_blank">
-                      Hanzai Watchers (Crime Watchers)
-                      <span className="inline-block mr-3">
-                      <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
-                      </span>
-                    </a>
-                    <span className="inline-block">
-                      <a href='https://github.com/ashleyhodge/anime_crime-watchers' target="_blank">
-                      <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
-                      </a>
-                    </span>
-                  </h3>
-                  <p className="leading-normal text-sm text-blue-200">
-                    Completed 2022 | MERN Stack
-                  </p>
-                </header>
-                <ul className="mt-2.1 text-sm text-gray-600 leading-normal pr-2">
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Developed an application designed to allow users for submitting crime tips as well as meet others who feel passionately about serving their community and stopping crime.
-                  </li>
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Utilized tools such as React, React-Bootstrap, Redux, JavaScript, animate.css, tailwind.css, Node, Express, MongoDB, Mongoose, GraphQL, Apollo, and deployed with Heroku.
-                  </li>
-                </ul>
-              </section>
-              {/* <!--Project 3----------------------------------------------------------> */}
-              <section className="pb-4 mb-4 border-b-2 border-blue-50 break-inside-avoid">
-                <header>
-                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
-                    <a href='https://access-tennesee.herokuapp.com/' target="_blank">
-                      Access Tennessee
-                      <span className="inline-block mr-3">
-                      <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
-                      </span>
-                    </a>
-                    <span className="inline-block">
-                      <a href='https://github.com/ashleyhodge/Access-Tennessee' target="_blank">
-                      <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50"/>
-                      </a>
-                    </span>
-                  </h3>
-                  <p className="leading-normal text-sm text-blue-200">
-                    Completed 2022 | JavaScript, Node.js, HTML5, CSS, Bootstrap, Express.js
-                  </p>
-                </header>
-                <ul className="mt-2.1 text-sm text-gray-600 leading-normal pr-2">
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Facilitated individuals by providing chance to rate and directly interact with businesses in community for explaining specific types of impairments/ disabilities needs.
-                  </li>
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Utilized jQuery, basic JavaScript, and Backend with Handlebars and Node dependencies like Animate.css. to implement UI/UX design for Access Tennessee.
-                  </li>
-                </ul>
-              </section>
-              {/* <!--Project 4----------------------------------------------------------> */}
-              <section className="mb-2 break-inside-avoid">
-                <header>
-                  <h3 className="text-md font-semibold text-blue-100 leading-snugish">
-                    <a href='https://d1sl.github.io/symmetrical-robot/' target="_blank">
-                      Sour Screens
-                      <span className="inline-block mr-3">
-                      <FaExternalLinkAlt className="mx-2 fill-blue-100 hover:fill-blue-50"/>
-                      </span>
-                    </a>
-                    <span className="inline-block">
-                      <a href='https://github.com/ashleyhodge/symmetrical-robot' target="_blank">
-                        <AiOutlineGithub className="fill-blue-100 hover:fill-blue-50" />
-                      </a>
-                    </span>
-                  </h3>
-                  <p className="leading-normal text-sm text-blue-200">
-                    Completed 2021 | HTML5, CSS, JavaScript, RestAPI
-                  </p>
-                </header>
-                <ul className="mt-2.1 text-sm text-gray-600 leading-normal pr-2">
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Designed website allows to search for an actor / actress and present list of movies with most poorly rated.
-                  </li>
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Implemented UI/UX design for this project; Utilized Movie Database API for data of actors and movie ratings.
-                  </li>
-                  <li>
-                    <span className="transform -translate-y-px select-none pr-2 text-gray-550">
-                      &#x029EB; 
-                    </span>
-                    Utilized JavaScript, jQuery, IMDb API, HTML, CSS, and Bootstrap during project.
-                  </li>
-                </ul>
-              </section>
             </div>
           </section>
-          {/* <!--Begin Skills -----------------------------------------------------------------------------------------------------> */}
-          <section className="pb-4 mt-4 first:mt-0">
+          <div className='border-2 border-[#302DE0] rounded'></div>
+          {/* Skills */}
+          <section className="pb-4 mt-4">
             {/* <!-- To keep in the same column --> */}
             <div className="break-inside-avoid">
-              <h2 className="mb-2 text-md font-bold tracking-widest text-blue-200">
+              <h2 className="mb-2 text-lg font-bold tracking-widest text-center sm:text-left">
                 SKILLS
               </h2>
               <section className="mb-2 break-inside-avoid">
 
                 <div className="my-1 last:pb-1">
-                  <ul className="flex flex-wrap text-sm2 leading-relaxed -mr-1.6-mb-1">
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                  <ul className="flex flex-wrap text-sm justify-center sm:justify-start leading-relaxed -mr-1.6-mb-1">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 leading-relaxed text-[#31A727] border-[#31A727] border-[1px] rounded-full">
                       HTML5
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       CSS3
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Tailwind.css
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       animate.css
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Bootstrap
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Javascript
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Node.js
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       JSX
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       React
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       React-Router
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       MySQL
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Sequelize
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Express.js
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       NoSQL
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       MongoDB
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Mongoose
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Apollo
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       GraphQL
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       RestAPIs
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Git
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       Version Control
                     </li>
-                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-gray-200 leading-relaxed bg-blue-200 rounded">
+                    <li className="px-2.5 mr-1.6 mb-1 mr-2 text-[#31A727] leading-relaxed border-[#31A727] border-[1px] rounded-full">
                       UI/ UX Design
                     </li>
                   </ul>
