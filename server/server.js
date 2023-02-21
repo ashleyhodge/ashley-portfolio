@@ -5,8 +5,9 @@ const cors = require("cors");
 // import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
 
-const dotenv = require('dotenv')
-dotenv.config();
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({path: __dirname+'/.env'});
+}
 
 const db = require('./config/connection');
 // import our typeDefs and resolvers
@@ -38,7 +39,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   }
   
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client', 'build', 'index.js'));
+    res.sendFile(path.join(__dirname, '../client', 'build', 'index.html'));
   });
   
   db.once('open', () => {
