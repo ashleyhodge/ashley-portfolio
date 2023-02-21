@@ -1,0 +1,26 @@
+{
+  "name": "ashley-portfolio",
+  "version": "1.0.0",
+  "description": "Here you will find details about my professional experience as software developer, my personal and professional projects, my resume, and multiple ways to get in contact with me.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleyhodge/ashley-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleyhodge/ashley-portfolio/issues"
+  },
+  "homepage": "https://github.com/ashleyhodge/ashley-portfolio#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

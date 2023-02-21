@@ -29,19 +29,19 @@ const navToggle = () => setShowNav(!showNav);
               </li>
             </Link>  
             <Link to='/resume'>
-              <li className=" nav">
+              <li className="nav">
                 resume
               </li>
             </Link> 
             <Link to='/contact'>
-              <li className=" nav">
+              <li className="nav">
                 contact
               </li>
             </Link>  
           </ul>
         </div>
         {/* Mobile Navigation */}
-            <div className=" m-3">
+            <div className="m-3">
                 <AiOutlineMenu
                 onClick={navToggle}
                 className="sm:hidden bg-[#D44416] p-3 rounded-full opacity-[50%] text-[60px] text-white"
