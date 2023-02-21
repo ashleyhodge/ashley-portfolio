@@ -16,14 +16,11 @@ const Projects = (index) => {
         <div>loading...</div>
       ):(
         <div>
-          <div className='mb-12'></div>
-          <div>
+          <div className='mt-12'>
             <Project key={index} projects={projects} />
           </div>
         </div>
-        
       )}
-      
     </section>
   )
 }
