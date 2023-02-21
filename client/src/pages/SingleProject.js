@@ -24,7 +24,7 @@ const SingleProject = () => {
             <div className='sm:w-[88%] lg:w-full sm:m-3 lg:col-span-2'>
               <img 
                   className="rounded-[20px] border-[3px] border-[#302DE0] border-opacity-[50%] "
-                  src={projectImg}
+                  src={project.images}
                   alt="Logo"
                 />
             </div>
