@@ -9,6 +9,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import SingleProject from './pages/SingleProject';
 import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -42,6 +43,10 @@ function App() {
               <Route 
                 path='/resume'
                 element={<Resume />}
+              />
+              <Route 
+                path='contact'
+                element={<Contact />}
               />
             </Routes>
           </main>

@@ -1,6 +1,6 @@
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import { AiOutlineGithub, AiOutlineDownload } from 'react-icons/ai'
-
+import { AiOutlineGithub,  } from 'react-icons/ai'
+// AiOutlineDownload
 
 const Resume = () => {
   return (
@@ -8,7 +8,7 @@ const Resume = () => {
         className="max-w-3xl mb-4 p-3 mx-auto my-auto lg:h-letter md:max-w-letter md:h-letter sm:p-9 md:p-16 lg:mt-6 rounded opacity-[50%]">
         {/* Name */}
         {/* DOES NOT WORK */}
-        <a href="../../assets/Ashley_Hodge_Resume.pdf" download={"Ashley_Hodge_Resume.pdf"} className='flex justify-end'><AiOutlineDownload size={30}/> </a>
+        {/* <a href="../../assets/Ashley_Hodge_Resume.pdf" download={"Ashley_Hodge_Resume.pdf"} className='flex justify-end'><AiOutlineDownload size={30}/> </a> */}
         {/*  */}
         <header className="w-full mb-3 align-top">
           <div className="block text-center sm:text-left">
@@ -48,7 +48,7 @@ const Resume = () => {
                   </li>
                   <li
                     className="mt-1 leading-normal text-sm">
-                    <a href="https://ashleyhodge.github.io/ashley-portfolio/" target="_blank" rel="noreferrer" className='flex items-center font-light'>
+                    <a href="https://github.com/ashleyhodge" target="_blank" rel="noreferrer" className='flex items-center font-light'>
                       <span
                         className="mr-5 text-md font-semibold">
                         Github:
@@ -110,7 +110,7 @@ const Resume = () => {
                 EXPERIENCE
               </h2>
               {/* <!--Job 1--> */}
-              <section className="mb-2 break-inside-avoid">
+              <section className="mb-2 mt-4 break-inside-avoid">
                 <header>
                   <h3 className="text-md font-semibold text-center sm:text-left">
                     Youth Substance Abuse Prevention Specialist 
@@ -119,7 +119,7 @@ const Resume = () => {
                     August 2021 &ndash; August 2022 | Sidney, MT
                   </p>
                 </header>
-                <div className='text-sm'>
+                <div className='text-sm pt-2  pr-2'>
                   <li>
                     Served as program coordinator for ensuring drug-free communities. 
                   </li>
@@ -147,7 +147,7 @@ const Resume = () => {
           </section>
           {/* Education */}
           <section className="pb-4 sm:mt-6 sm:ml-3 text-center sm:text-left">
-            {/* <!-- To keep in the same column --> */}
+            {/* To keep in the same column */}
             <div className="break-inside-avoid">
               <h2 className="mb-2 text-lg font-bold tracking-widest">
                 EDUCATION
@@ -199,7 +199,7 @@ const Resume = () => {
                   <h3 className="flex-grow text-md font-semibold">
                     Pellissippi State Community College
                   </h3>
-                  <p clasName="leading-normal text-sm font-light">
+                  <p className="leading-normal text-sm font-light">
                     2014 &ndash; 2016 | Associates of Science
                   </p>
                 </header>

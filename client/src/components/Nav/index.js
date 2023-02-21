@@ -33,10 +33,11 @@ const navToggle = () => setShowNav(!showNav);
                 resume
               </li>
             </Link> 
-              
+            <Link to='/contact'>
               <li className=" nav">
-              contact
-            </li>
+                contact
+              </li>
+            </Link>  
           </ul>
         </div>
         {/* Mobile Navigation */}
@@ -76,10 +77,11 @@ const navToggle = () => setShowNav(!showNav);
                     resume
                   </li>
                 </Link>
-                
-                <li className="nav-mobile">
-                contact
-                </li>
+                <Link to='/contact'>
+                  <li className="nav-mobile">
+                    contact
+                  </li>
+                </Link>
               </div>
               </ul>
             </div>
