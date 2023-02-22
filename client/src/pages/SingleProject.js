@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_PROJECT } from '../utils/queries';
-import projectImg from '../assets/images/project.png'
 
 
 const SingleProject = () => {
