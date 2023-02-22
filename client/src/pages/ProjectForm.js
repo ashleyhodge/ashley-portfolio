@@ -1,4 +1,16 @@
-const ProjectForm = () => {
+import { useQuery } from "@apollo/client";
+import { useState } from "react";
+import TechForm from "../components/TechForm";
+import TechList from "../components/TechList";
+
+import { QUERY_TECH } from "../utils/queries";
+
+const ProjectForm = (index) => {
+  const { loading, data } = useQuery(QUERY_TECH);
+
+  const tech = data?.tech || [];
+  console.log(tech);
+
   return (
     <section>
       <form>
@@ -32,13 +44,18 @@ const ProjectForm = () => {
           />
         </div>
         {/* Technologies */}
-        <div>
-          <label>
-            <input type='checkbox' />
-            react
-          </label>
-        </div>
+          {loading ? (
+            <div>Loading...</div>
+          ):(
+            <div>
+              <TechList key={index} tech={tech} />
+            </div>
+          )}
+
+            
       </form>
+      {/* Add new tech */}
+      <TechForm />
     </section>
   )
 }

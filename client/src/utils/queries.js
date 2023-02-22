@@ -31,3 +31,13 @@ export const QUERY_PROJECT = gql`
     }
   }
 `;
+
+export const QUERY_TECH = gql`
+  query Tech {
+    tech {
+      _id
+      backTech
+      frontTech
+    }
+  }
+`;

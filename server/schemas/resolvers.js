@@ -44,10 +44,26 @@ const resolvers = {
 
       return updatedProject
     },
+    updateTech: async (parent, args) => {
+      const updateTech = await Tech.findOneAndUpdate(
+        {_id: '63f65c260c2f42af51a560de' },
+        { $push: {frontTech: args.frontTech, backTech: args.backTech}},
+        { new: true } 
+      )
+      return updateTech;
+    },
     deleteProject: async (parent, { projectId }) => {
       const deletedProject = Project.findOneAndDelete({_id: projectId})
 
       return deletedProject;
+    },
+    deleteTech: async (parent, args) => {
+      const deleteTech = await Tech.findOneAndUpdate(
+        {_id: '63f65c260c2f42af51a560de' },
+        { $pull: {frontTech: args.frontTech, backTech: args.backTech}},
+        { new: true } 
+      )
+      return deleteTech;
     },
   }
 }
