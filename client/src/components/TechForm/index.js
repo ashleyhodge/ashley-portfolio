@@ -27,33 +27,33 @@ const TechForm = () => {
     setBackTech('')
   }
   return (
-    <section>
-      <form onSubmit={handleFormSubmit}>
-      <div className="flex flex-col justify-center items-center">
-        <input 
-          className="w-2/4 border rounded"
-          placeholder="Description"
-          value={frontTech}
-          onChange={handleFrontTech}
-        />
-        <button className="border rounded-full bg-blue-100 px-2 py-1 w-full hover:bg-blue-200 w-1/2">
-        Add new front tech
-      </button>
+    <section className='flex justify-center pb-28'>
+      <form onSubmit={handleFormSubmit} >
+        <div className="flex">
+          <input 
+            className="border rounded"
+            placeholder="Description"
+            value={frontTech}
+            onChange={handleFrontTech}
+          />
+          <button className="border rounded-full bg-blue-100 px-2 py-1 hover:bg-blue-200 ">
+            Add new front tech
+          </button>
         </div>
-    </form>
-    <form onSubmit={handleFormSubmit}>
-      <div className="flex flex-col justify-center items-center">
-        <input 
-          className="w-2/4 border rounded"
-          placeholder="Description"
-          value={backTech}
-          onChange={handleBackTech}
-        />
-        <button className="border rounded-full bg-blue-100 px-2 py-1 w-full hover:bg-blue-200 w-1/2">
-        Add new back tech
-      </button>
+      </form>
+      <form onSubmit={handleFormSubmit} className='px-5'>
+        <div className="flex">
+          <input 
+            className="border rounded"
+            placeholder="Description"
+            value={backTech}
+            onChange={handleBackTech}
+          />
+          <button className="border rounded-full bg-blue-100 px-2 py-1 hover:bg-blue-200">
+            Add new back tech
+          </button>
         </div>
-    </form>
+      </form>
     </section>
     
   )

@@ -3,6 +3,8 @@ import { useQuery } from '@apollo/client';
 import { QUERY_PROJECT } from '../utils/queries';
 
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 const SingleProject = () => {
   const { id: projectId } = useParams();
 
@@ -21,14 +23,18 @@ const SingleProject = () => {
         <div className='sm:mx-3 sm:mt-[50px] lg:mx-6'>
           <div className='my-5 sm:flex sm:flex-col sm:justify-center sm:items-center'>
             <div className='sm:w-[88%] lg:w-[60%] sm:m-3'>
+              <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
               {project.images.map((image, index) => {
                 return (
+                  <div key={index}>
                     <img 
                       className="rounded-[20px] border-[3px] border-[#302DE0] border-opacity-[50%] "
                       src={image}
                       alt="Logo"
                     />
+                  </div>
                 )})}
+              </Carousel>
             </div>
             <div className='sm:w-full sm:mb-5 flex flex-col justify-evenly'>
               <div className='mt-5 sm:m-3 lg:m-0 lg:text-center'>
