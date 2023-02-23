@@ -1,6 +1,7 @@
 import { useQuery, useMutation } from "@apollo/client";
 import { useState } from "react";
 import TechForm from "../components/TechForm";
+import ImageForm from "../components/ImageForm";
 
 import { ADD_PROJECT } from "../utils/mutations";
 import { QUERY_TECH } from "../utils/queries";
@@ -12,7 +13,6 @@ const ProjectForm = () => {
   const [github, setGithub] = useState('');
   const [website, setWebsite] = useState('');
   const [description, setDescription] = useState('')
-
   const [frontTech, setFrontTech] = useState([])
   const [backTech, setBackTech] = useState([])
 
@@ -33,6 +33,7 @@ const ProjectForm = () => {
   const handleDescription = event => {
     setDescription(event.target.value)
   }
+
 
   // Add/Remove checked item from list
   const handleFrontCheck = (event) => {
@@ -67,7 +68,7 @@ const ProjectForm = () => {
         website,
         description,
         frontTech,
-        backTech
+        backTech,
       }
     })
     setName('')
@@ -80,6 +81,10 @@ const ProjectForm = () => {
 
   return (
     <section>
+      {/* Upload images to cloudinary and then display them here so they can be used */}
+      <div className="flex flex-col justify-center items-center">
+        <ImageForm />
+      </div>
       <form onSubmit={handleFormSubmit}>
         {/*  Project Name*/}
         <div className="flex justify-center">
@@ -90,6 +95,15 @@ const ProjectForm = () => {
             onChange={handleName}
           />
         </div>
+        {/* Title Image */}
+        {/* <div>
+          <input 
+            className="w-1/4 border text-center rounded"
+            placeholder="Project Name"
+            value={images}
+            onChange={handleImages}
+          />
+        </div> */}
         {/* GitHub */}
         <div className="flex justify-center">
           <input 
@@ -126,19 +140,23 @@ const ProjectForm = () => {
                 <div>
                   {tech.frontTech.map((frontTech, index) => {
                     return (
-                      <div key={index} className='flex'>
-                        <input value={frontTech} onChange={handleFrontCheck} type='checkbox' />
-                        <span>{frontTech}</span>
+                      <div key={index} className='flex mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]'>
+                        <input value={frontTech} onChange={handleFrontCheck} type='checkbox' 
+                        className="accent-[#302DE0] w-[15px] opacity-[70%]"
+                        />
+                        <span className="pl-2 opacity-[50%]"> {frontTech}</span>
                       </div>
                     )})}
                 </div>
                 <div>
                   {tech.backTech.map((backTech, index) => {
                     return (
-                      <label key={index} className='flex'>
-                        <input value={backTech} onChange={handleBackCheck} type='checkbox' />
-                        <span>{backTech}</span>
-                      </label>
+                      <div key={index} className='flex mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]'>
+                        <input value={backTech} onChange={handleBackCheck} type='checkbox'
+                        className="accent-[#302DE0] w-[15px] opacity-[70%]"
+                        />
+                        <span className="pl-2 opacity-[50%]"> {backTech}</span>
+                      </div>
                     )})}
                 </div>
               </div>
