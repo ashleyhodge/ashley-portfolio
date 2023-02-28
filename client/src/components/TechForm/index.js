@@ -4,7 +4,6 @@ import { useState } from "react";
 import { ADD_TECH } from "../../utils/mutations";
 import { QUERY_TECH } from "../../utils/queries";
 
-
 const TechForm = () => {
   const [frontTech, setFrontTech] = useState('');
   const [backTech, setBackTech] = useState('');
@@ -13,6 +12,7 @@ const TechForm = () => {
   const [addTech] = useMutation(ADD_TECH, {
     refetchQueries: [{ query: QUERY_TECH }]
   });
+
 
 
   const handleFrontTech = event => {
