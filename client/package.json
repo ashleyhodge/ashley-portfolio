@@ -1,5 +1,4 @@
 {
-  "homepage": "https://ashley-portfolio.vercel.app/",
   "proxy": "http://localhost:3001",
   "name": "client",
   "version": "0.1.0",

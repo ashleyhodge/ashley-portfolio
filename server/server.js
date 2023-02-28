@@ -34,7 +34,7 @@ app.get('/api/images', async (req, res) => {
     const {resources} = await cloudinary.search
   .expression('folder:portfolio')
   .sort_by('created_at', 'desc')
-  .max_results(5)
+  .max_results(10)
   .execute();
   const imageInfo = resources.map((file) => file);
   res.send(imageInfo);
@@ -42,6 +42,7 @@ app.get('/api/images', async (req, res) => {
     console.log(error)
   }
 })
+
 app.post('/api/upload', async (req, res) => {
   try {
     const fileStr = req.body.data;

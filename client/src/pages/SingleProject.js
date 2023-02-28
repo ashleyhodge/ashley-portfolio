@@ -59,12 +59,12 @@ const SingleProject = () => {
                   </div>
                 </div>
                 <div className='flex justify-evenly my-5 lg:mt-20'>
-                  <a href={project.github}>
+                  <a href={project.github} target="_blank" rel="noreferrer">
                     <button className='bg-[#302DE0] border-[#302DE0] border-2 opacity-[50%] text-white rounded-[10px] px-5 text-[24px] lg:text-[30px] 2xl:text-[36px] '>
                       GitHub
                     </button>
                   </a>
-                  <a href={project.website}>
+                  <a href={project.website} target="_blank" rel="noreferrer">
                     <button className='border-[#302DE0] border-2 opacity-[50%] text-[#302DE0] rounded-[10px] px-5 text-[24px] lg:text-[30px] 2xl:text-[36px]'>Website</button>
                   </a>
                 </div>

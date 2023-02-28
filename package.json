@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/ashleyhodge/ashley-portfolio/issues"
   },
-  "homepage": "https://github.com/ashleyhodge/ashley-portfolio#readme",
   "devDependencies": {
     "concurrently": "^7.6.0"
   }
