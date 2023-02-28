@@ -8,6 +8,9 @@ import Nav from './components/Nav';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import SingleProject from './pages/SingleProject';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import ProjectForm from './pages/ProjectForm';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -15,14 +18,14 @@ const httpLink = createHttpLink({
 
 const client = new ApolloClient({
   link: httpLink,
-  cache: new InMemoryCache()
-})
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
     <ApolloProvider client={client}>
       <div>
-        <Router>
+        <Router basename='/'>
           <main>
             <Nav />
             <Routes>
@@ -35,9 +38,21 @@ function App() {
                 element={<About />}
               />
               <Route path='/projects'>
-                <Route path='singleproject' element={<SingleProject />} />
+                <Route path=':id' element={<SingleProject />} />
                 <Route path='' element={<Projects />}/>
               </Route>
+              <Route 
+                path='/resume'
+                element={<Resume />}
+              />
+              <Route 
+                path='/contact'
+                element={<Contact />}
+              />
+              <Route 
+                path='/admin4952'
+                element={<ProjectForm />}
+              />
             </Routes>
           </main>
         </Router>

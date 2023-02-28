@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+.box {
+  height:100vh;
+}
 /* Nav bar styles */
 .nav {
   @apply bg-[#D44416] opacity-[50%] h-[48px] w-[120px] rounded-[20px] text-white flex items-center justify-center text-[28px];

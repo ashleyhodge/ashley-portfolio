@@ -4,9 +4,11 @@ const cors = require("cors");
 
 // import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
+const { cloudinary } = require('./utils/cloudinary');
 
-const dotenv = require('dotenv')
-dotenv.config();
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({path: __dirname+'/.env'});
+}
 
 const db = require('./config/connection');
 // import our typeDefs and resolvers
@@ -26,6 +28,34 @@ app.use(cors());
 app.use(express.urlencoded({ limit: '50mb', extended: false }));
 app.use(express.json({ limit: '50mb' }));
 
+
+app.get('/api/images', async (req, res) => {
+  try {
+    const {resources} = await cloudinary.search
+  .expression('folder:portfolio')
+  .sort_by('created_at', 'desc')
+  .max_results(5)
+  .execute();
+  const imageInfo = resources.map((file) => file);
+  res.send(imageInfo);
+  } catch (error) {
+    console.log(error)
+  }
+})
+app.post('/api/upload', async (req, res) => {
+  try {
+    const fileStr = req.body.data;
+    const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
+      upload_preset: 'r0zimzi6'
+    });
+    console.log(uploadedResponse);
+    res.json({msg: 'YAYAYA'})
+  } catch (error) {
+    console.log(error)
+    res.status(500).json({err: 'Something went wrong'})
+  }
+})
+
 // create a new instanceof an Apollo server with Graphql schema
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
@@ -33,13 +63,13 @@ const startApolloServer = async (typeDefs, resolvers) => {
   server.applyMiddleware({ app });
 
   // Serve up static assets
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-}
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client', 'build')));
+  }
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client', 'build', 'index.html'));
+  });
   
   db.once('open', () => {
       app.listen(PORT, () => {
