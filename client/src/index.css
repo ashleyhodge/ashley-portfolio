@@ -24,55 +24,49 @@ body {
   @apply my-[5%] lg:mb-5 sm:mx-[10px] lg:mx-[20px]
 }
 .mobile-profile {
-  @apply z-10 absolute w-[200px] sm:w-[170px] sm:top-[600px] rounded-full border-[10px] border-white
+  @apply z-10 -mt-[100px] mb-5 w-[200px] sm:w-[170px] sm:top-[600px] rounded-full border-[10px] border-white
 }
 .home-grid {
-  @apply grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 lg:gap-3 xl:gap-10 mt-[100px] sm:mt-[50px]
+  @apply grid grid-cols-3 sm:grid-cols-4 xl:grid-cols-5  gap-5  mt-[100px] sm:mt-[50px]
 }
 .profile-div {
-  @apply bg-[#302DE0] bg-opacity-[50%] text-white text-center rounded-[20px] col-span-3 sm:col-span-2 lg:col-span-3 pt-[100px] sm:pt-[5px] sm:flex sm:flex-col sm:justify-center xl:p-10
+  @apply bg-[#302DE0] bg-opacity-[50%] text-white text-center rounded-[20px] col-span-3 sm:col-span-2 xl:col-span-3 sm:pt-[5px] sm:flex sm:flex-col sm:justify-center xl:p-10
 }
 .profile-section {
   @apply lg:flex lg:justify-around xl:justify-start xl:pl-10
 }
 .name {
-  @apply text-[30px] md:text-[40px] lg:text-[30px] xl:text-[40px] font-bold drop-shadow-md
+  @apply text-[30px] md:text-[40px] xl:justify-start xl:text-[40px] font-bold drop-shadow-md
 }
 .job-div, .location-div {
-  @apply flex items-center justify-center lg:justify-start pb-3 lg:pb-2
+  @apply flex items-center justify-center xl:justify-start pb-3 lg:pb-2
 }
 .job {
-  @apply text-[20px] md:text-[30px] lg:text-[20px] xl:text-[30px] drop-shadow-md
+  @apply text-[20px] md:text-[30px] xl:text-[30px] drop-shadow-md
 }
 .location {
-  @apply text-[18px] md:text-[28px] lg:text-[18px] xl:text-[25px] font-light drop-shadow-md
+  @apply text-[18px] md:text-[28px]  xl:text-[25px] font-light drop-shadow-md
 }
 .sm-profile {
-  @apply flex justify-center mt-5 lg:hidden
+  @apply flex justify-center mt-5 xl:hidden
 }
 .sm-img {
   @apply hidden sm:block z-10 w-[200px] rounded-full border-[10px] border-white
 }
 .social {
-  @apply flex justify-center lg:justify-start pt-5 lg:py-2
-}
-.lg-profile {
-  @apply flex justify-center mt-5 lg:mt-0 xl:hidden
-}
-.lg-img {
-  @apply hidden lg:block z-10 w-[200px] lg:w-[150px] rounded-full border-[10px] lg:border-[5px] border-white lg:my-2
+  @apply flex justify-center py-5 xl:justify-start xl:m-2 
 }
 .xl-profile {
-  @apply flex z-10 absolute left-[47%] top-[34%] 2xl:left-[49%] 2xl:top-[34%] mt-5 lg:mt-0 hidden xl:block
+  @apply flex z-10 absolute left-[46%] top-[35%] 2xl:left-[49%] 2xl:top-[37%] mt-5 lg:mt-0 hidden xl:block
 }
 .xl-img {
   @apply xl:w-[230px] rounded-full border-[10px] lg:border-[5px] xl:border-[10px] border-white lg:my-2
 }
 .description {
-  @apply bg-[#0688FF] bg-opacity-[50%] text-white rounded-[20px] p-5 lg:px-10 xl:p-10 col-span-3 sm:col-span-2 lg:col-span-2 lg:row-span-2 text-[20px] sm:text-[19px] md:text-[22px] lg:text-[20px] xl:text-[25px] 2xl:text-[30px] font-light flex items-center text-center
+  @apply bg-[#0688FF] bg-opacity-[50%] text-white rounded-[20px] p-5 lg:px-10 xl:p-10 col-span-3 sm:col-span-2 xl:row-span-2 text-[20px] sm:text-[19px] md:text-[22px] xl:text-[25px] 2xl:text-[30px] font-light flex items-center text-center
 }
 .skills-container {
-  @apply bg-[#31A727] opacity-[50%] text-white text-[30px] md:text-[40px] lg:text-[25px] rounded-[20px] p-5 lg:py-[5px] xl:p-10 col-span-3 sm:col-span-4 lg:col-span-3
+  @apply bg-[#31A727] opacity-[50%] text-white text-[30px] md:text-[40px] lg:text-[25px] rounded-[20px] p-5 lg:py-[5px] xl:p-10 col-span-3 sm:col-span-4 xl:col-span-3
 }
 .react {
   @apply text-[10px] md:text-[20px] lg:text-[10px] mt-2 lg:mt-0
@@ -92,13 +86,13 @@ body {
   @apply sm:flex sm:items-center sm:ml-5 md:ml-10
 }
 .mobile-school {
-  @apply flex justify-end sm:hidden
+  @apply flex justify-end sm:hidden -mt-[170px] -mr-[20px]
 }
 .mobile-school-img {
-  @apply absolute w-[150px] sm:w-[200px] rounded-full border-[10px] border-white
+  @apply  w-[150px] sm:w-[200px] rounded-full border-[10px] border-white
 }
 .school-info {
-  @apply bg-[#31A727] bg-opacity-[50%] rounded-[20px] py-[90px] sm:py-[60px] md:py-[30px] px-5 sm:pr-11 md:pr-12 lg:pr-24 text-center sm:text-left sm:w-3/4 lg:w-10/12 
+  @apply bg-[#31A727] bg-opacity-[50%] rounded-[20px] py-[90px] sm:py-[60px] md:py-[30px] px-5 sm:pr-11 md:pr-20 mdplus:pr-24 text-center sm:text-left sm:w-3/4 lg:w-10/12 
 }
 .job-done {
   @apply font-bold drop-shadow-md text-[24px] xl:text-[30px]
@@ -116,7 +110,7 @@ body {
   @apply absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:mr-5 mdplus:mr-10 lg:mr-5 xl:mr-16 rounded-full border-[10px] border-white
 }
 .americorp-container {
-  @apply sm:flex sm:items-center sm:mr-5 md:mr-10 
+  @apply sm:flex sm:items-center sm:mr-5 md:mr-10
 }
 .americorp {
   @apply flex justify-start items-center 
@@ -125,7 +119,7 @@ body {
   @apply  absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:ml-5 mdplus:ml-10 lg:ml-5 xl:ml-16 rounded-full border-[10px] border-white
 }
 .americorp-info {
-  @apply bg-[#0688FF] bg-opacity-[50%] rounded-[20px] pb-[90px] pt-[70px] sm:py-[60px] md:py-[30px] px-5 sm:pl-11 md:pl-12 lg:pl-24 xl:pl-28 text-center sm:text-right sm:w-3/4 lg:w-10/12
+  @apply bg-[#0688FF] bg-opacity-[50%] rounded-[20px] pb-[90px] pt-[70px] sm:py-[60px] md:py-[30px] px-5 sm:pl-11 md:pl-20 mdplus:pl-24 xl:pl-28 text-center sm:text-right sm:w-3/4 lg:w-10/12
 }
 .bootcamp-container {
   @apply sm:flex sm:items-center sm:ml-5 md:ml-10
@@ -137,7 +131,7 @@ body {
   @apply absolute w-[150px] sm:w-[200px] rounded-full border-[10px] border-white
 }
 .bootcamp-info {
-  @apply bg-[#302DE0] bg-opacity-[50%] rounded-[20px] py-[90px] sm:py-[60px] md:py-[30px] px-5 sm:pr-11 md:pr-12 lg:pr-24 xl:pr-28 text-center sm:text-left sm:w-3/4 lg:w-10/12
+  @apply bg-[#302DE0] bg-opacity-[50%] rounded-[20px] py-[90px] sm:py-[60px] md:py-[30px] px-5 sm:pr-11 md:pr-20 mdplus:pr-24 xl:pr-28 text-center sm:text-left sm:w-3/4 lg:w-10/12
 }
 .desktop-bootcamp {
   @apply hidden sm:flex sm:justify-end sm:items-center
@@ -155,5 +149,5 @@ body {
   @apply absolute w-[150px] sm:w-[200px] md:w-[220px] mdplus:w-[250px] lg:w-[220px] xl:w-[250px] md:ml-5 mdplus:ml-10 lg:ml-5 xl:ml-16 rounded-full border-[10px] border-white
 }
 .learning-info {
-  @apply bg-[#31A727] bg-opacity-[50%] rounded-[20px] pb-[90px] pt-[70px] sm:py-[60px] md:py-[30px] px-5 sm:pl-11 md:pl-12 lg:pl-24 xl:pl-28 text-center sm:text-right sm:w-3/4 lg:w-10/12
+  @apply bg-[#31A727] bg-opacity-[50%] rounded-[20px] pb-[90px] pt-[70px] sm:py-[60px] md:py-[30px] px-5 sm:pl-11 md:pl-20 mdplus:pl-24 xl:pl-28 text-center sm:text-right sm:w-3/4 lg:w-10/12
 }

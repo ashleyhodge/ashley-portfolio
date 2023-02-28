@@ -122,7 +122,6 @@ const ProjectForm = () => {
       const res = await fetch('/api/images');
       const data = await res.json();
       setImageList(data);
-      console.log(data)
     } catch (error) {
       console.log(error);
     }
@@ -154,9 +153,7 @@ const ProjectForm = () => {
     setBackTech([])
     setImages([])
 
-    if(event.target.checked) {
-      console.log("checked")
-    }
+    event.target.reset()
   }
 
   return (
@@ -188,7 +185,9 @@ const ProjectForm = () => {
               <img alt="alt" className="w-[20%] rounded"  src={previewSource}></img>
             )}
         </form>
-        <div>
+      </div>
+      <form onSubmit={handleFormSubmit}>
+        <div className="flex flex-col items-center">
           <h1 className="text-center opacity-[50%]">Check image to add to project:</h1>
           <div className="flex">
             {imageList && imageList.map((images, index) => (
@@ -211,9 +210,7 @@ const ProjectForm = () => {
             <GrRefresh onClick={() => loadImages()} />
           </div>
         </div>
-      </div>
-
-      <form onSubmit={handleFormSubmit}>
+      
         {/*  Project Name*/}
         <div className="flex justify-center p-2">
           <input

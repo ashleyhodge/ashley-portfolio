@@ -241,18 +241,42 @@ const Resume = () => {
                     <span>
                       <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>React</button>
                     </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>JavaScript</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>Tailwind.css</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>Apollo Client</button>
+                    </span>
                   </p>
                   <p className="leading-normal text-sm">
                     Back:
                     <span>
-                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>React</button>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>Node</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>Express</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>GraphQl</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>MongoDB</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>Apollo Server</button>
+                    </span>
+                    <span>
+                      <button className='mt-2 text-white text-xs rounded-full px-[7px] bg-[#0688FF] m-2'>Mongoose</button>
                     </span>
                   </p>
                 </header>
                 <p className="mt-2.1 text-sm leading-normal">
                   A unique and streamlined developer portfolio site that
                   combines the useful aspect of development portfolios with a
-                  blog using Next.js. Interface is clean and features graphics
+                  blog using ReactJS. Interface is clean and features graphics
                   designed personally for use within the site.
                 </p>
               </section>

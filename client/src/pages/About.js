@@ -11,15 +11,17 @@ const About = () => {
       <div className='text-white'>
         {/* School */}
         <div className='school-container'>
-          <div className='mobile-school'>
+          
+        <div className='mt-[70px] sm:mt-[50px]'>
+          
+          <div className="school-info">
+            <div className='mobile-school'>
             <img 
               className="mobile-school-img"
               src={School}
               alt="Logo"
             />
           </div>
-        <div className='mt-[70px] sm:mt-[50px]'>
-          <div className="school-info">
             <h1 className='job-done'>
             Graduated from the University of Tennessee with a B.A. in Psychology
             </h1>

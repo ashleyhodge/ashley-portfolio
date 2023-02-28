@@ -6,16 +6,17 @@ import Profile from '../assets/images/profile.png'
 const Home = () => {
   return(
     <div className='home-container'>
-      <div className='flex justify-center sm:hidden'>
+      
+      <div className="home-grid">
+        {/* Title Info */}
+        <div className="profile-div">
+          <div className='flex justify-center sm:hidden'>
         <img 
           className="mobile-profile"
           src={Profile}
           alt="Logo"
         />
       </div>
-      <div className="home-grid">
-        {/* Title Info */}
-        <div className="profile-div">
           <div className='profile-section'>
             <div>
               <h1 className="name">
@@ -41,19 +42,22 @@ const Home = () => {
                 />
               </div>
               <div className='social'>
-                <BsFacebook size={28} className='mr-2' />
-                <BsTwitter size={28} className='mr-2' />
-                <BsInstagram size={28} className='mr-2'/>
-                <BsGithub size={28} className='mr-2'/>
-                <BsLinkedin size={28}/>
+                <a href='https://www.facebook.com/ashley.hodge.7165/' target="_blank" rel="noreferrer">
+                  <BsFacebook size={28} className='mr-2' />
+                </a>
+                <a href='https://twitter.com/Ashley__Hodge' target="_blank" rel="noreferrer">
+                  <BsTwitter size={28} className='mr-2' />
+                </a>
+                <a href='https://www.instagram.com/ashley__hodge/' target="_blank" rel="noreferrer">
+                  <BsInstagram size={28} className='mr-2'/>
+                </a>
+                <a href='https://github.com/ashleyhodge' target="_blank" rel="noreferrer">
+                  <BsGithub size={28} className='mr-2'/>
+                </a>
+                <a href='https://www.linkedin.com/in/ashley-hodge/' target="_blank" rel="noreferrer">
+                  <BsLinkedin size={28}/>
+                </a>
               </div>
-            </div>
-            <div className='lg-profile'>
-              <img 
-                className="lg-img"
-                src={Profile}
-                alt="Logo"
-              />
             </div>
           </div>
         </div>
