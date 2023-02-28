@@ -46,7 +46,7 @@ const resolvers = {
     },
     updateTech: async (parent, args) => {
       const updateTech = await Tech.findOneAndUpdate(
-        {_id: '63f65c260c2f42af51a560de' },
+        {_id: '63fd40455922a8f575e3997b' },
         { $push: {frontTech: args.frontTech, backTech: args.backTech}},
         { new: true } 
       )
@@ -59,7 +59,7 @@ const resolvers = {
     },
     deleteTech: async (parent, args) => {
       const deleteTech = await Tech.findOneAndUpdate(
-        {_id: '63f65c260c2f42af51a560de' },
+        {_id: '63fd40455922a8f575e3997b' },
         { $pull: {frontTech: args.frontTech, backTech: args.backTech}},
         { new: true } 
       )

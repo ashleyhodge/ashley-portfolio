@@ -17,7 +17,7 @@ const Project = ({ projects }) => {
             <div className='sm:m-5'>
               <img 
                 className="rounded-[20px] border-[3px] border-[#302DE0] border-opacity-[50%] mb-5 sm:mb-0"
-                src={project.images}
+                src={project.images[0]}
                 alt="Logo"
               />
             </div>

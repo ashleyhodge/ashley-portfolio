@@ -4,12 +4,12 @@ import { useState } from "react";
 import { ADD_TECH } from "../../utils/mutations";
 
 
-
 const TechForm = () => {
   const [frontTech, setFrontTech] = useState('');
   const [backTech, setBackTech] = useState('');
 
   const [addTech] = useMutation(ADD_TECH);
+
 
   const handleFrontTech = event => {
     setFrontTech(event.target.value)
@@ -18,17 +18,23 @@ const TechForm = () => {
     setBackTech(event.target.value)
   }
 
-  const handleFormSubmit = async event => {
+  const handleFrontForm = async event => {
     event.preventDefault();
     await addTech({
-      variables: { frontTech, backTech }
+      variables: { frontTech }
     })
     setFrontTech('')
+  }
+  const handleBackForm = async event => {
+    event.preventDefault();
+    await addTech({
+      variables: { backTech }
+    })
     setBackTech('')
   }
   return (
     <section className='flex justify-center pb-28'>
-      <form onSubmit={handleFormSubmit} >
+      <form onSubmit={handleFrontForm} >
         <div className="flex">
           <input 
             className="border rounded"
@@ -41,7 +47,7 @@ const TechForm = () => {
           </button>
         </div>
       </form>
-      <form onSubmit={handleFormSubmit} className='px-5'>
+      <form onSubmit={handleBackForm} className='px-5'>
         <div className="flex">
           <input 
             className="border rounded"
