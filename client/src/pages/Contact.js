@@ -1,4 +1,3 @@
-import { AiOutlineMail } from 'react-icons/ai'
 import { BsFacebook, BsTwitter, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs'
 import emailjs from 'emailjs-com'
 
@@ -22,13 +21,22 @@ const Contact = () => {
         <p className='text-center text-[20px] md:text-[22px] xl:text-[30px] font-light mx-2 md:mx-5 mt-3 text-sm leading-normal '>
           I'm always open to any questions, comments, or opportunities that you might have. Please don't hesitate to reach out if you would like to connect!
         </p>
-        <div className='flex justify-center m-4'>
-          <AiOutlineMail size={25} className='mr-2' />
-          <BsFacebook size={25} className='mr-2'/>
-          <BsGithub size={25} className='mr-2'/>
-          <BsInstagram size={25} className='mr-2'/>
-          <BsLinkedin size={25} className='mr-2'/>
-          <BsTwitter size={25}/>
+        <div className='flex justify-evenly m-4'>
+          <a href='https://www.facebook.com/ashley.hodge.7165/' target="_blank" rel="noreferrer">
+            <BsFacebook size={28} className='mr-2' />
+          </a>
+          <a href='https://twitter.com/Ashley__Hodge' target="_blank" rel="noreferrer">
+            <BsTwitter size={28} className='mr-2' />
+          </a>
+          <a href='https://www.instagram.com/ashley__hodge/' target="_blank" rel="noreferrer">
+            <BsInstagram size={28} className='mr-2'/>
+          </a>
+          <a href='https://github.com/ashleyhodge' target="_blank" rel="noreferrer">
+            <BsGithub size={28} className='mr-2'/>
+          </a>
+          <a href='https://www.linkedin.com/in/ashley-hodge/' target="_blank" rel="noreferrer">
+            <BsLinkedin size={28}/>
+          </a>
         </div>
       </div>
       <div>
