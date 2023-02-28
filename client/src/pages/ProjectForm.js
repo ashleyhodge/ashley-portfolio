@@ -153,6 +153,10 @@ const ProjectForm = () => {
     setFrontTech([])
     setBackTech([])
     setImages([])
+
+    if(event.target.checked) {
+      console.log("checked")
+    }
   }
 
   return (
@@ -273,7 +277,7 @@ const ProjectForm = () => {
                   {tech.backTech.map((backTech, index) => {
                     return (
                       <div key={index} className='flex mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]'>
-                        <input value={backTech} onChange={handleBackCheck} type='checkbox'
+                        <input value={backTech} onChange={handleBackCheck} defaultChecked={false} type='checkbox'
                         className="accent-[#302DE0] w-[15px] opacity-[70%]"
                         />
                         <span className="pl-2 opacity-[50%]"> {backTech}</span>
@@ -286,13 +290,15 @@ const ProjectForm = () => {
           })}
         </div>
         <div className="flex justify-center m-5">
-          <button className="border rounded-full bg-blue-100 px-2 py-1 w-1/2 hover:bg-blue-200">
+          <button type="submit" className="border rounded-full bg-blue-100 px-2 py-1 w-1/2 hover:bg-blue-200">
             Make Project
           </button>
         </div>
+        
       </form>
       {/* Add new tech */}
       <TechForm />
+      
     </section>
   )
 }

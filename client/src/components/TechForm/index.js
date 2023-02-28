@@ -42,12 +42,12 @@ const TechForm = () => {
         <div className="flex">
           <input 
             className="border rounded"
-            placeholder="Description"
+            placeholder="Frontend"
             value={frontTech}
             onChange={handleFrontTech}
           />
-          <button className="border rounded-full bg-blue-100 px-2 py-1 hover:bg-blue-200 ">
-            Add new front tech
+          <button className="border rounded-full bg-blue-100 mx-2 px-2 py-1 hover:bg-blue-200 ">
+            Add Tech
           </button>
         </div>
       </form>
@@ -55,12 +55,12 @@ const TechForm = () => {
         <div className="flex">
           <input 
             className="border rounded"
-            placeholder="Description"
+            placeholder="Backend"
             value={backTech}
             onChange={handleBackTech}
           />
-          <button className="border rounded-full bg-blue-100 px-2 py-1 hover:bg-blue-200">
-            Add new back tech
+          <button className="border rounded-full bg-blue-100 mx-2 px-2 py-1 hover:bg-blue-200">
+            Add Tech
           </button>
         </div>
       </form>
