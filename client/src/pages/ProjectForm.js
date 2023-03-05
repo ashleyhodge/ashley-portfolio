@@ -192,8 +192,9 @@ const ProjectForm = () => {
           <div className="flex">
             {imageList && imageList.map((images, index) => (
               <div className='cursor-pointer hover:opacity-[70%]' key={index}>
-                <input value={images.url} onChange={handleImages} type='checkbox' />
-                <span>
+                <label>
+                  <input value={images.url} onChange={handleImages} type='checkbox' />
+                  <span>
                   <Image
                   cloudName='decfxx7f2'
                   publicId={images.public_id}
@@ -201,8 +202,9 @@ const ProjectForm = () => {
                   crop='fit'
                   className='m-2 rounded active:ring-2 active:ring-blue-100'
                   onClick={() => {navigator.clipboard.writeText(images.url)}}
-                />
-                </span>
+                  />
+                  </span>
+                </label>
               </div>
             ))}
           </div>
