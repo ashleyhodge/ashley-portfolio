@@ -21,7 +21,7 @@ const SingleProject = () => {
       {loading ? (
         <div>Loading ... </div>
       ):(
-        <div className='sm:mx-3 sm:mt-[50px] lg:mx-6'>
+        <div className=' mx-1 sm:mx-3 sm:mt-[50px] lg:mx-6'>
           <div className='my-5 sm:flex sm:flex-col sm:justify-center sm:items-center'>
             <div className='sm:w-[88%] lg:w-[60%] sm:m-3'>
               <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
@@ -64,9 +64,13 @@ const SingleProject = () => {
                       GitHub
                     </button>
                   </a>
-                  <a href={project.website} target="_blank" rel="noreferrer">
-                    <button className='border-[#302DE0] border-2 opacity-[50%] text-[#302DE0] rounded-[10px] px-5 text-[24px] lg:text-[30px] 2xl:text-[36px]'>Website</button>
-                  </a>
+                  {/* if website is null don't render the website button */}
+                  {project.website && <a href={project.website} target="_blank" rel="noreferrer">
+                    <button className='border-[#302DE0] border-2 opacity-[50%] text-[#302DE0] rounded-[10px] px-5 text-[24px] lg:text-[30px] 2xl:text-[36px]'>
+                      Website
+                    </button>
+                  </a>}
+                  
                 </div>
               </div>
             </div>

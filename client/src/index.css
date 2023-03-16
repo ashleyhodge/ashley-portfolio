@@ -4,8 +4,7 @@
 
 html,
 body {
-  margin: 0px;
-  height: 100%;
+  @apply flex flex-col min-h-screen
 }
 
 .box {
@@ -21,7 +20,7 @@ body {
 /*  */
 /* Home Page styles */
 .home-container {
-  @apply my-[5%] lg:mb-5 sm:mx-[10px] lg:mx-[20px]
+  @apply lg:mb-5 sm:mx-[10px] lg:mx-[20px]
 }
 .mobile-profile {
   @apply z-10 -mt-[100px] mb-5 w-[200px] sm:w-[170px] sm:top-[600px] rounded-full border-[10px] border-white

@@ -5,6 +5,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@ap
 
 import Home from './pages/Home';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import SingleProject from './pages/SingleProject';
@@ -26,7 +27,7 @@ function App() {
     <ApolloProvider client={client}>
       <div>
         <Router basename='/'>
-          <main>
+          <main className='flex flex-col min-h-screen'>
             <Nav />
             <Routes>
               <Route 
@@ -54,6 +55,7 @@ function App() {
                 element={<ProjectForm />}
               />
             </Routes>
+            <Footer />
           </main>
         </Router>
       </div>
