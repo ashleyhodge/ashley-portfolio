@@ -7,6 +7,22 @@ body {
   @apply flex flex-col min-h-screen
 }
 
+.markdown > * {
+  all: revert;
+}
+.markdown > h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.markdown > h2 {
+  font-size: 26px;
+  font-weight: 300;
+}
+.markdown > h3 {
+  font-size: 22px;
+  font-weight: 300;
+}
+
 .box {
   height:100vh;
 }

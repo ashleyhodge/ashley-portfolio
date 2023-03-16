@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_PROJECT } from '../utils/queries';
+import ReactMarkdown from 'react-markdown'
 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -75,9 +76,9 @@ const SingleProject = () => {
               </div>
             </div>
             <div className='my-5 sm:mt-0 bg-[#0688FF] bg-opacity-[50%] rounded-[20px] p-5 text-white text-center text-[18px] sm:text-[22px] lg:text-[26px] 2xl:text-[26px] col-span-5'>
-              <p>
+              <ReactMarkdown>
                 {project.description}
-              </p>
+              </ReactMarkdown>
             </div>
           </div>
         </div>

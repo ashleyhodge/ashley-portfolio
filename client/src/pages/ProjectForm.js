@@ -1,8 +1,10 @@
 import { useQuery, useMutation } from "@apollo/client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import TechForm from "../components/TechForm";
 import { Image } from 'cloudinary-react';
 import { GrRefresh } from 'react-icons/gr';
+import SimpleMDEReact from 'react-simplemde-editor';
+import 'easymde/dist/easymde.min.css';
 
 import { ADD_PROJECT } from "../utils/mutations";
 import { QUERY_TECH } from "../utils/queries";
@@ -34,9 +36,9 @@ const ProjectForm = () => {
   const handleWebsite = event => {
     setWebsite(event.target.value)
   }
-  const handleDescription = event => {
-    setDescription(event.target.value)
-  }
+  const handleDescription = useCallback((description) => {
+    setDescription(description);
+  }, [])
 
   // Add/Remove checked item from list
   const handleFrontCheck = (event) => {
@@ -242,7 +244,7 @@ const ProjectForm = () => {
         </div>
         {/* Description */}
         <div className="flex justify-center p-2">
-          <textarea 
+          <SimpleMDEReact
             className="w-2/4 border rounded"
             placeholder="Description"
             rows={4}
