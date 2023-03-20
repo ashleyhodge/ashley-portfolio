@@ -5,7 +5,7 @@ import { BsFacebook, BsTwitter, BsInstagram, BsGithub, BsLinkedin } from 'react-
 const Footer = () => {
   return (
     <footer className="hidden sm:block mt-auto">
-    <div className="mx-5 my-[50px]">
+    <div className="mx-5 mt-[50px]">
       <div className='border-2 border-[#302DE0] opacity-[50%] rounded'></div>
       <div className="hidden sm:block">
           <ul className="grid grid-cols-5 text-center m-[20px] opacity-[30%] justify-around">

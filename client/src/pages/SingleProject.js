@@ -24,7 +24,7 @@ const SingleProject = () => {
       ):(
         <div className=' mx-1 sm:mx-3 sm:mt-[50px] lg:mx-6'>
           <div className='my-5 sm:flex sm:flex-col sm:justify-center sm:items-center'>
-            <div className='sm:w-[88%] lg:w-[60%] sm:m-3'>
+            <div className='sm:w-[88%] lg:w-[60%] xl:w-[40%] sm:m-3'>
               <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
               {project.images.map((image, index) => {
                 return (
@@ -42,7 +42,7 @@ const SingleProject = () => {
               <div className='mt-5 sm:m-3 lg:m-0 lg:text-center'>
                 <h1 className='text-center font-bold text-[28px] lg:text-[34px] 2xl:text-[40px] opacity-[50%] m-2'>{project.name}</h1>
               </div>
-              <div className='sm:max-lg:ml-10 gap-5'>
+              <div className=' gap-5'>
                 <div className='lg:flex lg:flex-col lg:items-center'>
                   <div className='bg-[#31A727] bg-opacity-[50%] rounded-[20px] p-4 text-center'>
                     <h1 className='text-white text-[28px] lg:text-[32px] 2xl:text-[38px]  drop-shadow-md'>
