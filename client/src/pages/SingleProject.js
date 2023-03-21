@@ -24,13 +24,13 @@ const SingleProject = () => {
       ):(
         <div className=' mx-1 sm:mx-3 sm:mt-[50px] lg:mx-6'>
           <div className='my-5 sm:flex sm:flex-col sm:justify-center sm:items-center'>
-            <div className='sm:w-[88%] lg:w-[60%] xl:w-[40%] sm:m-3'>
+            <div className='sm:w-[88%] lg:w-[60%] xl:w-[40%] sm:m-3 drop-shadow'>
               <Carousel showArrows={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
               {project.images.map((image, index) => {
                 return (
                   <div key={index}>
                     <img 
-                      className="rounded-[20px] border-[3px] border-[#302DE0] border-opacity-[50%] "
+                      className="rounded-[20px]"
                       src={image}
                       alt="Logo"
                     />
